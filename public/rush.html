@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>RUSH - Freight sourcing for transportation professionals.</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="FREIGHTLEADS">
+  <meta property="og:url" content="https://freight-leads.com/">
+  <meta property="og:site_name" content="FREIGHTLEADS">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FREIGHTLEADS - Freight sourcing for transportation professionals.">
+  <meta property="og:description"
+    content="Freight leads &amp; sales training for transportation professionals. Flood your inbox with rate requests. Book more loads. Be more profitable.">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+
+  <!-- Animate On Screen -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '422152588165925', {
+      em: 'insert_email_variable'
+    });
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=422152588165925&ev=PageView&noscript=1" /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+
+
+  <!-- Hotjar Tracking Code for https://freight-leads.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1445329, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+</head>
+
+<body class="antialiased debug-screens" style="background-color: #FACA15;">
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v4.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="257218737765439" theme_color="#2c0c44"
+    logged_in_greeting="Hey! Want some freight to move?" logged_out_greeting="Hey! Want some freight to move?">
+  </div>
+
+
+
+  <!-- Navigation -->
+  <nav x-data="{ open: false }" class="">
+    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button @click="open = !open"
+            class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+            <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0">
+            <img class="block w-auto h-8 lg:hidden" src="./assets/png/2020_Logo.png" alt="" />
+            <img class="hidden w-auto h-8 lg:block" src="./assets/png/2020_Logo.png" alt="" />
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <!-- Desktop Menu Items -->
+            <div class="flex">
+              <a href="/"
+                class="px-3 py-2 font-semibold leading-5 text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-sm focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+
+              <a href="rush.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Rush</a>
+              <a href="accelerator.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Accelerator</a>
+              <a href="connect.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Connect</a>
+              <a href="capital.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Capital</a>
+              <a href="associates.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Associates</a>
+              <a href="contactus.html"
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+          <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
+            <div>
+              <button @click="open = !open"
+                class="flex transition duration-150 ease-in-out border-2 border-transparent rounded-full text-inter-sm focus:outline-none focus:border-white">
+                <svg class="w-6 h-6" stroke="white" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+              </button>
+            </div>
+            <div x-show="open" x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+              <div class="py-1 bg-white rounded-md shadow-xs">
+                <a href="tel:+8884880349"
+                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Call
+                  Us</a>
+                <a href="contactus.html"
+                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Email
+                  Us</a>
+                <a href="contactus.html"
+                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Contact
+                  Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu Items -->
+    <div :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden">
+      <div class="px-2 pt-2 pb-3">
+        <a href="/"
+          class="block px-3 py-2 font-medium text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-base focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+
+        <a href="rush.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Rush</a>
+        <a href="accelerator.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Accelerator</a>
+        <a href="connect.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Connect</a>
+        <a href="capital.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Capital</a>
+        <a href="associates.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Associates</a>
+        <a href="contactus.html"
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- /End of Navigation -->
+
+  <!-- Hero Banner --->
+
+
+  <section id="hero" class="flex items-center h-screen ... bg-cover bg-center"
+    style="background-image: url(https://images.unsplash.com/photo-1494412623380-6e86033ab9ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=80) ">
+
+    <div class="container mx-auto">
+      <p
+        class="px-2 font-black leading-10 tracking-tight text-white text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-7xl">
+        FREIGHTLEADS Rush™</p>
+      <p
+        class="max-w-lg px-2 mt-3 font-normal text-blue-800 text-inter-base sm:text-inter-lg md:mt-5 md:text-inter-xl md:max-w-4xl">
+        A
+        healthy and
+        profitable book of business is
+        dependent
+        on quality shippers that move large volumes of freight consistently with you as their preferred transportation
+        provider. </p>
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- \Hero Banner -->
+
+
+  <!-- Cards -->
+  <div class="relative px-4 pt-16 pb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="absolute inset-0">
+      <div class=" h-1/3 sm:h-2/3"></div>
+    </div>
+    <div class="relative mx-auto max-w-7xl">
+      <div class="text-center">
+        <h2
+          class="font-extrabold leading-9 tracking-tight text-blue-900 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+          From the blog
+        </h2>
+        <p class="max-w-3xl mx-auto mt-3 leading-7 text-blue-800 text-inter-xl sm:mt-4">
+          FREIGHTLEADS Match enables you to remain focused on running your daily operations by providing you qualified,
+          prescreened and vetted shipper leads sent directly to your email inbox so you don't have to spend any time
+          searching for leads yourself.
+        </p>
+      </div>
+      <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Blog
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                  atque fuga culpa, similique sequi cum eos quis dolorum.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Roel Aufderhar
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Video
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  How to use search engine optimization to drive sales
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat
+                  doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo
+                  laudantium.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Brenna Goyette
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline"> Case Study</a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Improve your customer experience
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                  magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Daniela Metz
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Blog
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                  atque fuga culpa, similique sequi cum eos quis dolorum.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Roel Aufderhar
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Video
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  How to use search engine optimization to drive sales
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat
+                  doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo
+                  laudantium.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Brenna Goyette
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline"> Case Study</a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Improve your customer experience
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                  magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Daniela Metz
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- \End of Cards -->
+
+  <!-- Call to Action -->
+  <div class="relative overflow-hidden ">
+    <div class="max-w-screen-xl mx-auto ">
+      <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+  
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+
+
+        <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="sm:text-center lg:text-left">
+            <h2
+              class="font-extrabold leading-10 tracking-tight text-gray-900 text-inter-4xl sm:text-5xl sm:leading-none md:text-6xl">
+              Data to enrich your
+              <br class="xl:hidden" />
+              <span class="text-indigo-600">online business</span>
+            </h2>
+            <p
+              class="mt-3 text-gray-500 text-inter-base sm:mt-5 sm:text-inter-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-inter-xl lg:mx-0">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+              fugiat veniam occaecat fugiat aliqua.
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="#"
+                  class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-inter-lg md:px-10">
+                  Get started
+                </a>
+              </div>
+              <div class="mt-3 sm:mt-0 sm:ml-3">
+                <a href="#"
+                  class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md text-inter-base hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 md:py-4 md:text-inter-lg md:px-10">
+                  Live demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
+        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+        alt="" />
+    </div>
+  </div>
+
+  <!-- \End Call to Action-->
+
+
+
+
+
+
+
+  <div>
+    <div class="pb-32 bg-center bg-cover rush-header">
+
+      <header class="py-10 ">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <h1 class="font-black leading-9 tracking-wide text-white text-inter-3xl">
+            FREIGHTLEADS Rush
+            ™
+          </h1>
+
+
+        </div>
+      </header>
+    </div>
+    <main class="-mt-32 rounded-lg shadow-2xl ">
+      <div class="px-4 pb-12 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-gray-50">
+        <!-- Replace with your content -->
+
+
+        <div class="py-16 overflow-hidden bg-gray-50 lg:py-24">
+          <div class="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-xl">
+            <svg class="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4" width="404"
+              height="784" fill="none" viewBox="0 0 404 784">
+              <defs>
+                <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
+                  patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+            </svg>
+
+            <div class="relative">
+              <h3
+                class="font-extrabold leading-8 tracking-tight text-center text-gray-900 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+                FREIGHTLEADS Connect™ is your on-demand,</br> pay-per-result satellite sales team.
+              </h3>
+              <p class="max-w-3xl mx-auto mt-4 leading-7 text-center text-gray-800 text-inter-lg">
+                Our service alleviates some of your workloads by enabling you to outsource your critical new business
+                development activities to connect and do business with shippers without the need to burden your payroll
+                with full- or part-time staff and assume all associated costs.
+              </p>
+            </div>
+
+            <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+              <div class="relative">
+                <h4 class="font-bold leading-6 text-gray-900 text-inter-lg">
+                  Growing your transportation portfolio is a massive undertaking in today’s competitive climate, to say
+                  the least.
+                </h4>
+                <p class="mt-3 leading-6 text-gray-800 text-inter-base">
+                  Every moment of your time and every ounce of your energy and devotion must be committed around the
+                  clock to ensure that all of your business horsepower and systems are consistently firing at peak
+                  performance levels.
+                </p>
+                <p class="mt-3 leading-6 text-gray-800 text-inter-base">
+                  FREIGHTLEADS Connect™ alleviates some of your workload by enabling you to outsource your critical new
+                  business development activities to connect and do business with shippers without the need to burden
+                  your payroll with full- or part-time staff and assume all associated costs.
+                </p>
+
+                <ul class="mt-10">
+                  <li>
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">How does it work?</h5>
+                        <p class="mt-2 leading-6 text-gray-800 text-inter-base">
+                          Quite simply. Based on your requirements and preferred criteria we locate, approach and make
+                          contact with shippers to solicit new business on your behalf. Once a shipper is ready and
+                          willing to engage with your company, we bow out of the communications process allowing you to
+                          handle your new prospects' freight transportation requirements directly, thereafter.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">How much does this service cost
+                          and what
+                          are the terms?</h5>
+                        <p class="mt-2 leading-6 text-gray-800 text-inter-base">There are no minimum terms and no
+                          contracts.
+                          You simply select in advance how many qualified, active shippers you would like to engage with
+                          and that is precisely what we deliver. Your small investment will be based on your needs. Give
+                          us a call to learn more about how we can help you develop new business efficiently.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">Who is this suitable for?</h5>
+                        <p class="mt-2 leading-6 text-gray-800 text-inter-base">
+                          FREIGHTLEADS Connect™ is ideal for any transportation professional interested in realizing
+                          remarkable ROI's by leveraging professional freight sales expertise to rapidly grow their book
+                          of business whilst freeing up valuable time.
+
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">What about Privacy?</h5>
+                        <p class="mt-2 leading-6 text-gray-800 text-inter-base">
+                          Every business lead that we generate on your behalf is yours to keep, indefinitely. We take
+                          privacy extremely seriously and will never cross-sell to or share information with any other
+                          third party; ever.
+
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative mt-10 -mx-4 lg:mt-0">
+                <svg class="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden" width="784"
+                  height="404" fill="none" viewBox="0 0 784 404">
+                  <defs>
+                    <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20"
+                      patternUnits="userSpaceOnUse">
+                      <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                    </pattern>
+                  </defs>
+                  <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+                </svg>
+                <img class="relative mx-auto" width="490"
+                  src="https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/businessman-working-in-a-office-340x510.jpg"
+                  alt="" />
+              </div>
+            </div>
+
+            <svg class="absolute hidden transform translate-x-1/2 translate-y-12 lg:block right-full" width="404"
+              height="784" fill="none" viewBox="0 0 404 784">
+              <defs>
+                <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+                  patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+            </svg>
+
+
+          </div>
+        </div>
+
+
+        <div class="relative">
+          <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+            <img class="object-cover w-full h-full"
+              src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6875F5&sat=-100&blend-mode=multiply"
+              alt="Support team" />
+          </div>
+          <div class="relative max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8 lg:py-16">
+            <div class="md:ml-auto md:w-1/2 md:pl-10">
+              <h2
+                class="mt-2 font-extrabold leading-9 tracking-tight text-gray-900 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+                Ready to capitalize with FREIGHTLEADS Connect™?
+              </h2>
+              <p class="mt-3 leading-7 text-gray-800 text-inter-lg">
+                If you've identified the need to grow your transportation portfolio and lighten your workload in order
+                to optimize your operations by partnering with the transportation industry's one-of-a-kind, on-demand
+                professional freight sales experts, give us a call to get started today.
+              </p>
+              <div class="mt-8">
+                <div class="inline-flex rounded-md shadow">
+                  <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 font-medium leading-6 text-gray-900 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-gray-600 focus:outline-none focus:shadow-outline">
+                    Let's get started.
+                    <svg class="w-5 h-5 ml-3 -mr-1 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5zM5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="px-4 py-5 mt-8 bg-white shadow sm:rounded-lg sm:p-6">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <h3 class="font-medium leading-6 text-gray-900 text-inter-lg">Contact Us</h3>
+              <p class="mt-1 leading-5 text-gray-800 text-inter-base">Have questions, comments or feedback?</br> Use
+                this form to get in touch with us.</p>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <div class="grid grid-cols-3 gap-6">
+                  <div class="col-span-3 sm:col-span-2">
+                    <label for="username" class="block font-medium leading-5 text-gray-700 text-inter-sm">
+                      Business Site
+                    </label>
+                    <div class="flex mt-1 rounded-md shadow-sm">
+                      <span
+                        class="inline-flex items-center px-3 text-gray-500 border border-r-0 border-gray-300 text-inter-sm rounded-l-md bg-gray-50">
+                        http://
+                      </span>
+                      <input id="company_website"
+                        class="flex-1 block w-full transition duration-150 ease-in-out rounded-none form-input rounded-r-md sm:text-inter-sm sm:leading-5"
+                        placeholder="www.example.com" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6">
+                  <label for="about" class="block font-medium leading-5 text-gray-700 text-inter-sm">
+                    About
+                  </label>
+                  <div class="rounded-md shadow-sm">
+                    <textarea id="about" rows="3"
+                      class="block w-full mt-1 transition duration-150 ease-in-out form-textarea sm:text-inter-sm sm:leading-5"
+                      placeholder="you@example.com"></textarea>
+                  </div>
+                  <p class="mt-2 text-gray-500 text-inter-sm">
+                    Brief description for your profile. URLs are hyperlinked.
+                  </p>
+                </div>
+
+
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 py-5 mt-6 bg-white shadow sm:rounded-lg sm:p-6">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <h3 class="font-medium leading-6 text-gray-900 text-inter-lg">Personal Information</h3>
+              <p class="mt-1 leading-5 text-gray-500 text-inter-sm">
+                Use a permanent address where you can receive mail.
+              </p>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <div class="grid grid-cols-6 gap-6">
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="first_name" class="block font-medium leading-5 text-gray-700 text-inter-sm">First
+                      name</label>
+                    <input id="first_name"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="last_name" class="block font-medium leading-5 text-gray-700 text-inter-sm">Last
+                      name</label>
+                    <input id="last_name"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-4">
+                    <label for="email_address" class="block font-medium leading-5 text-gray-700 text-inter-sm">Email
+                      address</label>
+                    <input id="email_address"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="country" class="block font-medium leading-5 text-gray-700 text-inter-sm">Country /
+                      Region</label>
+                    <select id="country"
+                      class="block w-full px-3 py-0 py-2 mt-1 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm form-select focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5">
+                      <option>United States</option>
+                      <option>Canada</option>
+                      <option>Mexico</option>
+                    </select>
+                  </div>
+
+                  <div class="col-span-6">
+                    <label for="street_address" class="block font-medium leading-5 text-gray-700 text-inter-sm">Street
+                      address</label>
+                    <input id="street_address"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                    <label for="city" class="block font-medium leading-5 text-gray-700 text-inter-sm">City</label>
+                    <input id="city"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                    <label for="state" class="block font-medium leading-5 text-gray-700 text-inter-sm">State /
+                      Province</label>
+                    <input id="state"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                    <label for="postal_code" class="block font-medium leading-5 text-gray-700 text-inter-sm">ZIP /
+                      Postal</label>
+                    <input id="postal_code"
+                      class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-inter-sm sm:leading-5" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 py-5 mt-6 bg-white shadow sm:rounded-lg sm:p-6">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <h3 class="font-medium leading-6 text-gray-900 text-inter-lg">Notifications</h3>
+              <p class="mt-1 leading-5 text-gray-500 text-inter-sm">
+                Decide which communications you'd like to receive and how.
+              </p>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <fieldset>
+                  <legend class="font-medium leading-6 text-gray-900 text-inter-base">By Email</legend>
+                  <div class="mt-4">
+                    <div class="flex items-start">
+                      <div class="absolute flex items-center h-5">
+                        <input id="comments" type="checkbox"
+                          class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox" />
+                      </div>
+                      <div class="leading-5 text-inter-sm pl-7">
+                        <label for="comments" class="font-medium text-gray-700">Comments</label>
+                        <p class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <div class="flex items-start">
+                        <div class="absolute flex items-center h-5">
+                          <input id="candidates" type="checkbox"
+                            class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox" />
+                        </div>
+                        <div class="leading-5 text-inter-sm pl-7">
+                          <label for="candidates" class="font-medium text-gray-700">Candidates</label>
+                          <p class="text-gray-500">Get notified when a candidate applies for a job.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <div class="flex items-start">
+                        <div class="absolute flex items-center h-5">
+                          <input id="offers" type="checkbox"
+                            class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox" />
+                        </div>
+                        <div class="leading-5 text-inter-sm pl-7">
+                          <label for="offers" class="font-medium text-gray-700">Offers</label>
+                          <p class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="mt-6">
+                  <legend class="font-medium leading-6 text-gray-900 text-inter-base">Push Notifications</legend>
+                  <p class="leading-5 text-gray-500 text-inter-sm">These are delivered via SMS to your mobile phone.</p>
+                  <div class="mt-4">
+                    <div class="flex items-center">
+                      <input id="push_everything" name="form-input push_notifications" type="radio"
+                        class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-radio" />
+                      <label for="push_everything" class="ml-3">
+                        <span class="block font-medium leading-5 text-gray-700 text-inter-sm">Everything</span>
+                      </label>
+                    </div>
+                    <div class="flex items-center mt-4">
+                      <input id="push_email" name="form-input push_notifications" type="radio"
+                        class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-radio" />
+                      <label for="push_email" class="ml-3">
+                        <span class="block font-medium leading-5 text-gray-700 text-inter-sm">Same as email</span>
+                      </label>
+                    </div>
+                    <div class="flex items-center mt-4">
+                      <input id="push_nothing" name="form-input push_notifications" type="radio"
+                        class="w-4 h-4 text-indigo-600 transition duration-150 ease-in-out form-radio" />
+                      <label for="push_nothing" class="ml-3">
+                        <span class="block font-medium leading-5 text-gray-700 text-inter-sm">No push
+                          notifications</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- /End replace -->
+      </div>
+    </main>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Testimonial -->
+  <div class="py-12 overflow-hidden bg-gray-50 md:py-20 lg:py-24 hero-bg-animated" style="background-color: #FACA15;">
+    <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <svg
+        class="absolute transform opacity-25 top-full right-full translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2"
+        width="404" height="404" fill="none" viewBox="0 0 404 404">
+        <defs>
+          <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)" />
+      </svg>
+
+      <div class="relative text-white">
+        <p class="text-center text-white text-inter-2xl">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <blockquote class="mt-8 ">
+          <div
+            class="max-w-3xl px-2 mx-auto leading-none tracking-wide text-center text-blue-800 font-semi-bold text-inter-xl">
+            <p>
+              &ldquo;New account successfully closed and this shipper is a whale! Working with your team has been an eye
+              opening experience for us. Thank you!&rdquo;
+            </p>
+          </div>
+          <footer class="mt-8 ">
+            <div class="md:flex md:items-center md:justify-center">
+              <div class="md:flex-shrink-0">
+                <img class="w-12 h-12 mx-auto rounded-full"
+                  src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+                  alt="" />
+              </div>
+              <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                <div class="font-medium leading-6 text-blue-800 text-inter-base">T. Adams | Fort
+                  Worth, TX</div>
+
+                <!-- <svg class="hidden w-5 h-5 mx-1 text-indigo-600 md:block" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 0h3L9 20H6l5-20z" /> -->
+                </svg>
+
+
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <!-- /End of Testimonial -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Video Text Overlay -->
+
+
+  <!-- <section class="text-white h-72 bg-video">
+    <div class="container mx-auto">
+      <div class="flex">
+        <div class="opacity-50 overlay "></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="https://storage.googleapis.com/coverr-main/mp4/Winter-Grass.mp4" type="video/mp4">
+        </video>
+        <div class="absolute z-10 flex flex-col justify-center flex-grow pin">
+          <div class="w-full p-4 mx-auto md:max-w-screen-lg lg:py-12">
+            <h3 data-aos="fade-up" data-aos-duration="1000"
+              class="font-extrabold leading-none text-yellow-300 text-inter-2xl">be the leader of the freight jungle
+            </h3>
+            <p data-aos="fade-up" data-aos-duration="1000" class="leading-loose sm:mt-4">
+              The National Register of FTL & LTL Shippers, 2020 Edition® Is North America's One & Only Trusted National
+              Publication of Quality Full Truckload & Less-than-Truckload American Freight Shipper Sales Leads For All
+              Transportation Professionals, Sales Representatives & Account Executives Representing Freight Forwarders,
+              Freight Brokers, Freight Agents, Motor Carriers, Dispatchers, Owner/Operators & Third-Party Logistics
+              Providers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <script src="./script.js"></script>
+
+
+  <!-- <div class="hero">
+    <video autoplay loop src="https://goo.gl/rkMBfx"></video>
+    <header class="grid-overlay">
+      <h1>Hero Background Video</h1>
+    </header>
+  </div> -->
+
+  <section class="mt-8 shadow-xl video-footer-section">
+    <div class="video">
+      <video class="video-object" width="1920" height="1280" autoplay muted loop>
+        <source src="https://freightleads.netlify.com/assets/vid/lion-ghost.mp4" type="video/mp4" />
+        <source src="http://www.coverr.co/s3/mp4/Coverr-Highrise.webm" type="video/webm" />
+      </video>
+    </div>
+    <div class="container px-4 text-center">
+      <h1 id="herotext" data-aos="fade-down" data-aos-duration="1000"
+        class="font-black leading-none tracking-tight text-gray-300 text-inter-4xl sm:leading-none">be the
+        leader of the freight jungle
+      </h1>
+    </div>
+  </section>
+
+  <!-- /Video Text Overlay -->
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+  <section>
+    <div class="">
+      <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                  Solutions
+                </h4>
+                <ul class="mt-4">
+                  <li>
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Marketing
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Analytics
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Commerce
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Insights
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                  Support
+                </h4>
+                <ul class="mt-4">
+                  <li>
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Documentation
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Guides
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      API Status
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                  Company
+                </h4>
+                <ul class="mt-4">
+                  <li>
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      About
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Jobs
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Press
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Partners
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                  Legal
+                </h4>
+                <ul class="mt-4">
+                  <li>
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Claim
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Privacy
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 xl:mt-0">
+            <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+              Subscribe to our newsletter
+            </h4>
+            <div class="flex mt-4">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                </svg>
+              </a>
+              <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
+                </svg>
+              </a>
+
+              <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Linkedin</span>
+                <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+                </svg>
+              </a>
+
+              <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Telegram</span>
+                <svg class="text-white fill-current" width="24px" height="24px" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                  xmlns:serif="http://www.serif.com/"
+                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                  <path id="telegram-5"
+                    d="M12,0c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12Zm0,2c5.514,0 10,4.486 10,10c0,5.514 -4.486,10 -10,10c-5.514,0 -10,-4.486 -10,-10c0,-5.514 4.486,-10 10,-10Zm2.692,14.889c0.161,0.115 0.368,0.143 0.553,0.073c0.185,-0.07 0.322,-0.228 0.362,-0.42c0.435,-2.042 1.489,-7.211 1.884,-9.068c0.03,-0.14 -0.019,-0.285 -0.129,-0.379c-0.11,-0.093 -0.263,-0.12 -0.399,-0.07c-2.096,0.776 -8.553,3.198 -11.192,4.175c-0.168,0.062 -0.277,0.223 -0.271,0.4c0.006,0.177 0.125,0.33 0.296,0.381c1.184,0.354 2.738,0.847 2.738,0.847c0,0 0.725,2.193 1.104,3.308c0.047,0.139 0.157,0.25 0.301,0.287c0.145,0.038 0.298,-0.001 0.406,-0.103c0.608,-0.574 1.548,-1.461 1.548,-1.461c0,0 1.786,1.309 2.799,2.03Zm-5.505,-4.338l0.84,2.769l0.186,-1.754c0,0 3.243,-2.925 5.092,-4.593c0.055,-0.048 0.062,-0.13 0.017,-0.188c-0.045,-0.057 -0.126,-0.071 -0.188,-0.032c-2.143,1.368 -5.947,3.798 -5.947,3.798Z" />
+                </svg>
+              </a>
+            </div>
+            <p class="mt-4 leading-6 text-gray-800 text-inter-base">
+              The latest news, articles, and resources, sent to your inbox weekly.
+            </p>
+
+
+
+            <form class="mt-4 sm:flex sm:max-w-md">
+              <input aria-label="Email address" type="email" required
+                class="w-full px-5 py-3 leading-6 text-gray-900 placeholder-gray-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none text-inter-base focus:outline-none focus:placeholder-gray-400"
+                placeholder="Enter your email" />
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                <button
+                  class="flex items-center justify-center w-full px-5 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md text-inter-base hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- /End of Footer -->
+
+
+  <!-- Credits -->
+
+
+
+
+
+
+  <div class="">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 md:flex md:items-start md:justify-between lg:px-8">
+
+      <div class="mt-8 md:mt-0 md:order-1"><a class="text-blue text-inter-base"
+          href="https://www.masterthepixel.com"></a>
+        <p class="leading-6 text-center text-blue text-inter-base">
+
+          developed with <span class="text-red-800">♥️</span> by <a
+            href="https://www.masterthepixel.com">masterthepixel</a>
+
+        </p></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- \End of Credits-->
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
