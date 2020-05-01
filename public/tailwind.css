@@ -1,8 +1,28 @@
 @tailwind base;
+
+.nav{
+    height: 40px;
+    width:auto;
+    height: 40px;
+    width:auto;
+    position:fixed;
+    z-index: 100;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 
-#hero {
-    background-blend-mode: multiply;
-}
+.hero {
+    background: linear-gradient(#0006, #0006), url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg);
+  /*   background-image: url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

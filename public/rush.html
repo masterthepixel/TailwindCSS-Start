@@ -66,7 +66,7 @@
 
 </head>
 
-<body class="antialiased debug-screens" style="background-color: #FACA15;">
+<body class="antialiased debug-screens" style="background-color: #faca15;">
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -93,10 +93,12 @@
 
 
 
+
+
   <!-- Navigation -->
   <nav x-data="{ open: false }" class="">
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
+      <div class="relative flex items-center justify-between h-20 ">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <button @click="open = !open"
             class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
@@ -108,29 +110,29 @@
             </svg>
           </button>
         </div>
-        <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+        <div class="flex justify-center flex-1 sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0">
-            <img class="block w-auto h-8 lg:hidden" src="./assets/png/2020_Logo.png" alt="" />
-            <img class="hidden w-auto h-8 lg:block" src="./assets/png/2020_Logo.png" alt="" />
+            <img class="block w-auto lg:hidden" src="./assets/png/2020_Logo.png" alt="" />
+            <img class="hidden w-auto lg:block" src="./assets/png/2020_Logo.png" alt="" />
           </div>
           <div class="hidden sm:block sm:ml-6">
             <!-- Desktop Menu Items -->
-            <div class="flex">
+            <div class="flex items-center">
               <a href="/"
                 class="px-3 py-2 font-semibold leading-5 text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-sm focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
 
               <a href="rush.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Rush</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Rush</a>
               <a href="accelerator.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Accelerator</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Accelerator</a>
               <a href="connect.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Connect</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Connect</a>
               <a href="capital.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Capital</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Capital</a>
               <a href="associates.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Associates</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Associates</a>
               <a href="contactus.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
+                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Contact</a>
             </div>
           </div>
         </div>
@@ -173,52 +175,45 @@
     <div :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden">
       <div class="px-2 pt-2 pb-3">
         <a href="/"
-          class="block px-3 py-2 font-medium text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-base focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+          class="block px-3 py-2 font-medium text-white transition duration-150 ease-in-out bg-yellow-400 rounded-md text-inter-base focus:outline-none focus:text-white focus:bg-yellow-300">Home</a>
 
         <a href="rush.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Rush</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Rush</a>
         <a href="accelerator.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Accelerator</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Accelerator</a>
         <a href="connect.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Connect</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Connect</a>
         <a href="capital.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Capital</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Capital</a>
         <a href="associates.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Associates</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Associates</a>
         <a href="contactus.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
+          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Contact</a>
       </div>
     </div>
   </nav>
   <!-- /End of Navigation -->
 
+
+
+
+  <div class="hero-section">
+    <div class="container transform translate-y-0">
+      <div class="max-w-lg ">
+        <h1 class="mt-12 font-bold bg-transparent text-inter-3xl sm:text-4xl">FREIGHTLEADS Rush™</h1>
+        <p class="mt-2 font-normal text-inter-base sm:text-inter-lg">A healthy and profitable book of business is
+          dependent
+          on quality shippers that move large
+          volumes
+          of freight consistently with you as their preferred transportation provider.</p>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- Hero Banner --->
 
-
-  <section id="hero" class="flex items-center h-screen ... bg-cover bg-center"
-    style="background-image: url(https://images.unsplash.com/photo-1494412623380-6e86033ab9ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=80) ">
-
-    <div class="container mx-auto">
-      <p
-        class="px-2 font-black leading-10 tracking-tight text-white text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-7xl">
-        FREIGHTLEADS Rush™</p>
-      <p
-        class="max-w-lg px-2 mt-3 font-normal text-blue-800 text-inter-base sm:text-inter-lg md:mt-5 md:text-inter-xl md:max-w-4xl">
-        A
-        healthy and
-        profitable book of business is
-        dependent
-        on quality shippers that move large volumes of freight consistently with you as their preferred transportation
-        provider. </p>
-
-
-
-
-
-
-    </div>
-
-  </section>
 
 
 
@@ -239,8 +234,10 @@
           From the blog
         </h2>
         <p class="max-w-3xl mx-auto mt-3 leading-7 text-blue-800 text-inter-xl sm:mt-4">
-          FREIGHTLEADS Match enables you to remain focused on running your daily operations by providing you qualified,
-          prescreened and vetted shipper leads sent directly to your email inbox so you don't have to spend any time
+          FREIGHTLEADS Match enables you to remain focused on running your daily operations by providing you
+          qualified,
+          prescreened and vetted shipper leads sent directly to your email inbox so you don't have to spend any
+          time
           searching for leads yourself.
         </p>
       </div>
@@ -263,7 +260,8 @@
                   Boost your conversion rate
                 </h3>
                 <p class="mt-3 leading-6 text-gray-500 text-inter-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium
+                  eius, ut
                   atque fuga culpa, similique sequi cum eos quis dolorum.
                 </p>
               </a>
@@ -366,7 +364,8 @@
                   Improve your customer experience
                 </h3>
                 <p class="mt-3 leading-6 text-gray-500 text-inter-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo
+                  recusandae
                   magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
                 </p>
               </a>
@@ -420,7 +419,8 @@
                   Boost your conversion rate
                 </h3>
                 <p class="mt-3 leading-6 text-gray-500 text-inter-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium
+                  eius, ut
                   atque fuga culpa, similique sequi cum eos quis dolorum.
                 </p>
               </a>
@@ -523,7 +523,8 @@
                   Improve your customer experience
                 </h3>
                 <p class="mt-3 leading-6 text-gray-500 text-inter-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo
+                  recusandae
                   magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
                 </p>
               </a>
@@ -590,7 +591,8 @@
             </h2>
             <p
               class="mt-3 text-gray-500 text-inter-base sm:mt-5 sm:text-inter-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-inter-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
+              amet
               fugiat veniam occaecat fugiat aliqua.
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -664,8 +666,10 @@
                 FREIGHTLEADS Connect™ is your on-demand,</br> pay-per-result satellite sales team.
               </h3>
               <p class="max-w-3xl mx-auto mt-4 leading-7 text-center text-gray-800 text-inter-lg">
-                Our service alleviates some of your workloads by enabling you to outsource your critical new business
-                development activities to connect and do business with shippers without the need to burden your payroll
+                Our service alleviates some of your workloads by enabling you to outsource your critical new
+                business
+                development activities to connect and do business with shippers without the need to burden your
+                payroll
                 with full- or part-time staff and assume all associated costs.
               </p>
             </div>
@@ -673,17 +677,23 @@
             <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div class="relative">
                 <h4 class="font-bold leading-6 text-gray-900 text-inter-lg">
-                  Growing your transportation portfolio is a massive undertaking in today’s competitive climate, to say
+                  Growing your transportation portfolio is a massive undertaking in today’s competitive climate,
+                  to
+                  say
                   the least.
                 </h4>
                 <p class="mt-3 leading-6 text-gray-800 text-inter-base">
-                  Every moment of your time and every ounce of your energy and devotion must be committed around the
+                  Every moment of your time and every ounce of your energy and devotion must be committed around
+                  the
                   clock to ensure that all of your business horsepower and systems are consistently firing at peak
                   performance levels.
                 </p>
                 <p class="mt-3 leading-6 text-gray-800 text-inter-base">
-                  FREIGHTLEADS Connect™ alleviates some of your workload by enabling you to outsource your critical new
-                  business development activities to connect and do business with shippers without the need to burden
+                  FREIGHTLEADS Connect™ alleviates some of your workload by enabling you to outsource your
+                  critical
+                  new
+                  business development activities to connect and do business with shippers without the need to
+                  burden
                   your payroll with full- or part-time staff and assume all associated costs.
                 </p>
 
@@ -701,9 +711,13 @@
                       <div class="ml-4">
                         <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">How does it work?</h5>
                         <p class="mt-2 leading-6 text-gray-800 text-inter-base">
-                          Quite simply. Based on your requirements and preferred criteria we locate, approach and make
-                          contact with shippers to solicit new business on your behalf. Once a shipper is ready and
-                          willing to engage with your company, we bow out of the communications process allowing you to
+                          Quite simply. Based on your requirements and preferred criteria we locate, approach and
+                          make
+                          contact with shippers to solicit new business on your behalf. Once a shipper is ready
+                          and
+                          willing to engage with your company, we bow out of the communications process allowing
+                          you
+                          to
                           handle your new prospects' freight transportation requirements directly, thereafter.
                         </p>
                       </div>
@@ -720,13 +734,18 @@
                         </div>
                       </div>
                       <div class="ml-4">
-                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">How much does this service cost
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">How much does this service
+                          cost
                           and what
                           are the terms?</h5>
                         <p class="mt-2 leading-6 text-gray-800 text-inter-base">There are no minimum terms and no
                           contracts.
-                          You simply select in advance how many qualified, active shippers you would like to engage with
-                          and that is precisely what we deliver. Your small investment will be based on your needs. Give
+                          You simply select in advance how many qualified, active shippers you would like to
+                          engage
+                          with
+                          and that is precisely what we deliver. Your small investment will be based on your
+                          needs.
+                          Give
                           us a call to learn more about how we can help you develop new business efficiently.
                         </p>
                       </div>
@@ -743,10 +762,14 @@
                         </div>
                       </div>
                       <div class="ml-4">
-                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">Who is this suitable for?</h5>
+                        <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">Who is this suitable for?
+                        </h5>
                         <p class="mt-2 leading-6 text-gray-800 text-inter-base">
-                          FREIGHTLEADS Connect™ is ideal for any transportation professional interested in realizing
-                          remarkable ROI's by leveraging professional freight sales expertise to rapidly grow their book
+                          FREIGHTLEADS Connect™ is ideal for any transportation professional interested in
+                          realizing
+                          remarkable ROI's by leveraging professional freight sales expertise to rapidly grow
+                          their
+                          book
                           of business whilst freeing up valuable time.
 
                         </p>
@@ -766,8 +789,10 @@
                       <div class="ml-4">
                         <h5 class="font-medium leading-6 text-gray-800 text-inter-lg">What about Privacy?</h5>
                         <p class="mt-2 leading-6 text-gray-800 text-inter-base">
-                          Every business lead that we generate on your behalf is yours to keep, indefinitely. We take
-                          privacy extremely seriously and will never cross-sell to or share information with any other
+                          Every business lead that we generate on your behalf is yours to keep, indefinitely. We
+                          take
+                          privacy extremely seriously and will never cross-sell to or share information with any
+                          other
                           third party; ever.
 
                         </p>
@@ -823,8 +848,10 @@
                 Ready to capitalize with FREIGHTLEADS Connect™?
               </h2>
               <p class="mt-3 leading-7 text-gray-800 text-inter-lg">
-                If you've identified the need to grow your transportation portfolio and lighten your workload in order
-                to optimize your operations by partnering with the transportation industry's one-of-a-kind, on-demand
+                If you've identified the need to grow your transportation portfolio and lighten your workload in
+                order
+                to optimize your operations by partnering with the transportation industry's one-of-a-kind,
+                on-demand
                 professional freight sales experts, give us a call to get started today.
               </p>
               <div class="mt-8">
@@ -849,7 +876,8 @@
           <div class="md:grid md:grid-cols-3 md:gap-6">
             <div class="md:col-span-1">
               <h3 class="font-medium leading-6 text-gray-900 text-inter-lg">Contact Us</h3>
-              <p class="mt-1 leading-5 text-gray-800 text-inter-base">Have questions, comments or feedback?</br> Use
+              <p class="mt-1 leading-5 text-gray-800 text-inter-base">Have questions, comments or feedback?</br>
+                Use
                 this form to get in touch with us.</p>
             </div>
             <div class="mt-5 md:mt-0 md:col-span-2">
@@ -1019,7 +1047,9 @@
                 </fieldset>
                 <fieldset class="mt-6">
                   <legend class="font-medium leading-6 text-gray-900 text-inter-base">Push Notifications</legend>
-                  <p class="leading-5 text-gray-500 text-inter-sm">These are delivered via SMS to your mobile phone.</p>
+                  <p class="leading-5 text-gray-500 text-inter-sm">These are delivered via SMS to your mobile
+                    phone.
+                  </p>
                   <div class="mt-4">
                     <div class="flex items-center">
                       <input id="push_everything" name="form-input push_notifications" type="radio"
@@ -1105,7 +1135,9 @@
           <div
             class="max-w-3xl px-2 mx-auto leading-none tracking-wide text-center text-blue-800 font-semi-bold text-inter-xl">
             <p>
-              &ldquo;New account successfully closed and this shipper is a whale! Working with your team has been an eye
+              &ldquo;New account successfully closed and this shipper is a whale! Working with your team has been
+              an
+              eye
               opening experience for us. Thank you!&rdquo;
             </p>
           </div>
