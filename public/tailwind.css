@@ -412,6 +412,15 @@
     background-position: 50% !important
 }
 
+.bg-hero {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+50&1+0,0+50 */
+    background: url('../assets/img/hero_mclaren.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
 #herotext {
     position: absolute;
     top: 50%;
