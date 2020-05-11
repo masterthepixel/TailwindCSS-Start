@@ -1287,7 +1287,7 @@
 
 
   <!-- Minor Detail Services -->
-  <div class="minor-bg">
+  <div id="minor" class="minor-bg">
     <div class="pt-12 sm:pt-16 lg:pt-24">
       <div class="max-w-screen-xl px-4 mx-auto text-center sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto lg:max-w-4xl">
@@ -2043,11 +2043,15 @@
             Contact Us
           </h2>
           <p class="mt-4 leading-6 text-gray-100 text-inter-lg">
-            We are open M-F: 9am – 5:00pm, Saturday: 9am – 4:30pm.
+            We are open M-F: 9:30am – 5:00pm, Saturday: 9am – 4:30pm.
           </p>
         </div>
         <div class="mt-12">
-          <form action="#" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+            <p class="hidden">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div>
               <label for="first_name" class="block font-medium leading-5 text-gray-200 text-inter-sm">First
                 name</label>
@@ -2060,12 +2064,6 @@
                 name</label>
               <div class="relative mt-1 rounded-md shadow-sm">
                 <input id="last_name" class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
-              </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="company" class="block font-medium leading-5 text-gray-200 text-inter-sm">Company</label>
-              <div class="relative mt-1 rounded-md shadow-sm">
-                <input id="company" class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
               </div>
             </div>
             <div class="sm:col-span-2">
@@ -2099,27 +2097,11 @@
                   class="block w-full px-4 py-3 transition duration-150 ease-in-out form-textarea"></textarea>
               </div>
             </div>
-            <div class="sm:col-span-2">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <!--
-                  Simple toggle
-  
-                  On: "bg-indigo-600", Off: "bg-gray-200"
-                -->
-                  <span role="checkbox" tabindex="0" aria-checked="false"
-                    class="relative flex-shrink-0 inline-block h-6 transition-colors duration-200 ease-in-out bg-gray-200 border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:shadow-outline">
-                    <!-- On: "translate-x-5", Off: "translate-x-0" -->
-                    <span aria-hidden="true"
-                      class="inline-block w-5 h-5 transition duration-200 ease-in-out transform translate-x-0 bg-white rounded-full shadow"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
+            <div data-netlify-recaptcha="true"></div>
             <div class="sm:col-span-2">
               <span class="inline-flex w-full rounded-md shadow-sm">
                 <button type="button"
-                  class="inline-flex items-center justify-center w-full px-6 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+                  class="inline-flex items-center justify-center w-full px-6 py-3 font-medium leading-6 text-black transition duration-150 ease-in-out bg-yellow-300 border border-transparent rounded-md text-inter-base hover:bg-yellow-400 focus:outline-none focus:border-yellow-400 focus:shadow-outline-indigo active:bg-yellow-300">
                   Let's talk
                 </button>
               </span>
@@ -2217,10 +2199,10 @@
                 </h4>
                 <div class="mt-2 leading-6 text-gray-200 text-inter-base">
                   <p>
-                    886 Unknown Streets
+
                   </p>
                   <p class="mt-1">
-                    Beltsville, MD 2XYAA
+                    Beltsville, MD
                   </p>
                 </div>
               </div>
@@ -2237,32 +2219,32 @@
       <div class="max-w-screen-xl px-4 py-12 mx-auto overflow-hidden sm:px-6 lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="ceramicpro.html#ceramic" class="leading-6 text-white text-inter-base hover:underline">
               Ceramic Pro
             </a>
           </div>
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="#" class="leading-6 text-white text-inter-base hover:underline">
               Window Tinting
             </a>
           </div>
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="index.html#detailing" class="leading-6 text-white text-inter-base hover:underline">
               Paint Correction
             </a>
           </div>
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="index.html#washing" class="leading-6 text-white text-inter-base hover:underline">
               Washing
             </a>
           </div>
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="index.html#minor" class="leading-6 text-white text-inter-base hover:underline">
               Detail Services
             </a>
           </div>
           <div class="px-5 py-2">
-            <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+            <a href="#" class="leading-6 text-white text-inter-base hover:underline">
               Alarms & Starters
             </a>
           </div>
@@ -2295,8 +2277,8 @@
 
         </div>
         <div class="mt-8">
-          <p class="leading-6 text-center text-gray-100 text-inter-base">
-            &copy; developed by masterthepixel.
+          <p class="leading-6 text-center text-white text-inter-base">
+            npm run production @masterthepixel.
           </p>
         </div>
       </div>

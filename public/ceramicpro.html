@@ -677,7 +677,8 @@
                     <div
                         class="inset-0 max-w-lg mx-auto overflow-hidden border-2 border-gray-100 rounded-lg shadow-lg lg:max-w-none lg:flex">
                         <div class="px-6 py-8 linear lg:flex-shrink-1 lg:p-12">
-                            <h3 class="font-extrabold leading-none text-gray-100 text-inter-2xl sm:text-inter-3xl ">
+                            <h3
+                                class="font-extrabold leading-none text-gray-100 text-inter-3xl md:text-inter-4xl lg:text-inter-5xl">
                                 Diamond Ceramic Pro
                             </h3>
 
@@ -1263,17 +1264,19 @@
                     <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
                 </svg>
                 <div class="text-center">
-                    <h2
-                        class="pt-2 font-extrabold leading-none text-white text-inter-3xl mt- sm:text-inter-4xl lg:text-inter-5xl ">
+                    <h2 class="mt-2 font-extrabold leading-none text-white text-inter-4xl lg:text-inter-6xl ">
                         Contact Us
                     </h2>
                     <p class="mt-4 leading-6 text-gray-100 text-inter-lg">
-                        We are open M-F: 9am – 5:00pm, Saturday: 9am – 4:30pm. Contact us today to schedule a free
-                        consultation and book an appointment!.
+                        We are open M-F: 9:30am – 5:00pm, Saturday: 9am – 4:30pm.
                     </p>
                 </div>
                 <div class="mt-12">
-                    <form action="#" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                        data-netlify-recaptcha="true" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         <div>
                             <label for="first_name"
                                 class="block font-medium leading-5 text-gray-200 text-inter-sm">First
@@ -1288,14 +1291,6 @@
                                 name</label>
                             <div class="relative mt-1 rounded-md shadow-sm">
                                 <input id="last_name"
-                                    class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
-                            </div>
-                        </div>
-                        <div class="sm:col-span-2">
-                            <label for="company"
-                                class="block font-medium leading-5 text-gray-200 text-inter-sm">Company</label>
-                            <div class="relative mt-1 rounded-md shadow-sm">
-                                <input id="company"
                                     class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
                             </div>
                         </div>
@@ -1333,11 +1328,11 @@
                                     class="block w-full px-4 py-3 transition duration-150 ease-in-out form-textarea"></textarea>
                             </div>
                         </div>
-
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="sm:col-span-2">
                             <span class="inline-flex w-full rounded-md shadow-sm">
                                 <button type="button"
-                                    class="inline-flex items-center justify-center w-full px-6 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+                                    class="inline-flex items-center justify-center w-full px-6 py-3 font-medium leading-6 text-black transition duration-150 ease-in-out bg-yellow-300 border border-transparent rounded-md text-inter-base hover:bg-yellow-400 focus:outline-none focus:border-yellow-400 focus:shadow-outline-indigo active:bg-yellow-300">
                                     Let's talk
                                 </button>
                             </span>
@@ -1357,7 +1352,7 @@
                 <div class="grid grid-cols-1 gap-16">
                     <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                         <h2
-                            class="pt-2 font-extrabold leading-none text-white text-inter-3xl mt- sm:text-inter-4xl lg:text-inter-5xl">
+                            class="font-extrabold leading-8 text-gray-100 text-inter-2xl sm:text-inter-3xl sm:leading-9">
                             Get in touch
                         </h2>
                         <div
@@ -1415,7 +1410,7 @@
                     <div class="border-t-2 border-gray-100"></div>
                     <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                         <h2
-                            class="pt-2 font-extrabold leading-none text-white text-inter-3xl mt- sm:text-inter-4xl lg:text-inter-5xl">
+                            class="font-extrabold leading-8 text-gray-100 text-inter-2xl sm:text-inter-3xl sm:leading-9">
                             Locations
                         </h2>
                         <div
@@ -1439,10 +1434,10 @@
                                 </h4>
                                 <div class="mt-2 leading-6 text-gray-200 text-inter-base">
                                     <p>
-                                        886 Unknown Streets
+
                                     </p>
                                     <p class="mt-1">
-                                        Beltsville, MD 2XYAA
+                                        Beltsville, MD
                                     </p>
                                 </div>
                             </div>
@@ -1459,32 +1454,32 @@
             <div class="max-w-screen-xl px-4 py-12 mx-auto overflow-hidden sm:px-6 lg:px-8">
                 <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+                        <a href="ceramicpro.html#ceramic" class="leading-6 text-white text-inter-base hover:underline">
                             Ceramic Pro
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
-                            Detailing
+                        <a href="#" class="leading-6 text-white text-inter-base hover:underline">
+                            Window Tinting
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+                        <a href="index.html#detailing" class="leading-6 text-white text-inter-base hover:underline">
                             Paint Correction
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+                        <a href="index.html#washing" class="leading-6 text-white text-inter-base hover:underline">
                             Washing
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+                        <a href="index.html#minor" class="leading-6 text-white text-inter-base hover:underline">
                             Detail Services
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="leading-6 text-gray-200 text-inter-base hover:text-white">
+                        <a href="#" class="leading-6 text-white text-inter-base hover:underline">
                             Alarms & Starters
                         </a>
                     </div>
@@ -1517,8 +1512,8 @@
 
                 </div>
                 <div class="mt-8">
-                    <p class="leading-6 text-center text-gray-100 text-inter-base">
-                        npm run production @masterthepixel
+                    <p class="leading-6 text-center text-white text-inter-base">
+                        npm run production @masterthepixel.
                     </p>
                 </div>
             </div>
