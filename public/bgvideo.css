@@ -1,0 +1,25 @@
+
+
+
+#video-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+  z-index: 10;
+  overflow: hidden;
+}
+.touch #video-container {
+  background: url(http://xtianmiller.com/dist/videos/winter_creek.jpg) no-repeat center;
+  background-size: cover;
+}
+
+video {
+  width: 100%;
+
+.touch video {
+  display: none;
+}
+

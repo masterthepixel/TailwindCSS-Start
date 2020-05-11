@@ -1,51 +1,720 @@
 @tailwind base;
 
-.nav{
-    height: 40px;
-    width:auto;
-    height: 40px;
-    width:auto;
-    position:fixed;
-    z-index: 100;
+.nav-bg {
+    background: #2A52BE;
+    background: linear-gradient(to bottom, #2A52BE 0%, #1B43AF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2A52BE), color-stop(100%, #1B43AF));
+    background: -webkit-linear-gradient(top, #2A52BE 0%, #1B43AF 100%);
+    background: -moz-linear-gradient(top, #2A52BE 0%, #1B43AF 100%);
+    background: -o-linear-gradient(top, #2A52BE 0%, #1B43AF 100%);
+    background: -ms-linear-gradient(top, #2A52BE 0%, #1B43AF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2A52BE', endColorstr='#1B43AF', GradientType=0);
+    border: 1px solid #0C34A0;
+    box-shadow: inset 0 1px 0 #3961CD;
+    -webkit-box-shadow: inset 0 1px 0 #3961CD;
+    -moz-box-shadow: inset 0 1px 0 #3961CD;
 }
+
+.grid-bg {
+    
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf2f5+0,e3a008+100 */
+    background: #edf2f5; /* Old browsers */
+    background: -moz-linear-gradient(top,  hsla(203,29%,95%,1) 0%, hsla(42,93%,46%,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  hsla(203,29%,95%,1) 0%,hsla(42,93%,46%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  hsla(203,29%,95%,1) 0%,hsla(42,93%,46%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf2f5', endColorstr='#e3a008',GradientType=0 ); /* IE6-9 */
+
+    
+
+
+
+
+}
+
+.landing-bg {
+
+    /* https://www.svgbackgrounds.com/#pattern-randomized */
+
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='90' height='45' viewBox='0 0 90 45'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.09' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23ffffff' stroke-width='0.09'%3E%3Crect fill='%23fafafa' width='1' height='1'/%3E%3Crect fill='%23ffffff' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23f5f5f5' width='1' height='1' y='1'/%3E%3Crect fill='%23f0f0f0' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ebebeb'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ffffff'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23000000'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23000000'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='90' height='45'/%3E%3Crect fill='url(%23b)' width='90' height='45'/%3E%3Crect fill='url(%23c)' width='90' height='45'/%3E%3Crect fill='url(%23d)' width='90' height='45'/%3E%3Crect fill='url(%23e)' width='90' height='45'/%3E%3Crect fill='url(%23f)' width='90' height='45'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.textshadow {
+    color: #FFFFFF;
+    text-shadow: #474747 3px 5px 2px;
+}
+
+.ceramicpro-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.1)),
+        url('../assets/img/ceramic.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.1)),
+        url('../assets/img/ceramic.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.tinting-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/tint.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/tint.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.washing-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/washing-card.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/washing-card.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.paintcorrection-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/911.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/911.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+.major-bg {
+    /* https://www.svgbackgrounds.com/#radiant-gradient */
+    background-color: #141b41;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23141b41' width='11' height='11'/%3E%3Crect fill='%23151c45' x='10' width='11' height='11'/%3E%3Crect fill='%23161e49' y='10' width='11' height='11'/%3E%3Crect fill='%23171f4d' x='20' width='11' height='11'/%3E%3Crect fill='%23182052' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23192156' y='20' width='11' height='11'/%3E%3Crect fill='%2319225a' x='30' width='11' height='11'/%3E%3Crect fill='%231a235e' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%231b2463' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%231c2567' y='30' width='11' height='11'/%3E%3Crect fill='%231d266b' x='40' width='11' height='11'/%3E%3Crect fill='%231d2770' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%231e2874' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%231f2979' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%231f2a7d' y='40' width='11' height='11'/%3E%3Crect fill='%23202b82' x='50' width='11' height='11'/%3E%3Crect fill='%23212b86' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23212c8b' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23222d8f' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23222d94' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23232e98' y='50' width='11' height='11'/%3E%3Crect fill='%23232e9d' x='60' width='11' height='11'/%3E%3Crect fill='%23242fa2' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23242fa6' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23242fab' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%232530b0' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%232530b4' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%232530b9' x='70' width='11' height='11'/%3E%3Crect fill='%232630be' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%232630c3' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%232630c8' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%232630cd' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%232730d2' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%232730d7' x='80' width='11' height='11'/%3E%3Crect fill='%232932d9' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%232d35da' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%233138dc' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23353bdd' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23383ede' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%233c42e0' x='90' width='11' height='11'/%3E%3Crect fill='%234045e1' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%234448e2' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23484ce3' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%234c4fe5' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%235052e6' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%235456e7' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%235859e8' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%235c5de9' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%236060ea' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%236464eb' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%236868ec' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%236d6ced' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%237170ee' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%237674ef' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%237a79f0' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%237f7df1' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%238381f2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%238885f2' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%238c8af3' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23918ef4' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.minor-bg {
+    background-color: #918ef4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23918ef4' width='11' height='11'/%3E%3Crect fill='%238f8cf4' x='10' width='11' height='11'/%3E%3Crect fill='%238c8af4' y='10' width='11' height='11'/%3E%3Crect fill='%238a88f4' x='20' width='11' height='11'/%3E%3Crect fill='%238787f4' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%238585f4' y='20' width='11' height='11'/%3E%3Crect fill='%238384f3' x='30' width='11' height='11'/%3E%3Crect fill='%238182f3' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%237f81f3' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%237d80f3' y='30' width='11' height='11'/%3E%3Crect fill='%237b7ff3' x='40' width='11' height='11'/%3E%3Crect fill='%23797ef3' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23777df3' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23767cf3' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23747bf3' y='40' width='11' height='11'/%3E%3Crect fill='%23727af3' x='50' width='11' height='11'/%3E%3Crect fill='%237079f3' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%236e78f3' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%236c77f3' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%236a76f2' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%236875f2' y='50' width='11' height='11'/%3E%3Crect fill='%236674f2' x='60' width='11' height='11'/%3E%3Crect fill='%236474f2' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%236373f2' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%236172f2' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%235f71f2' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%235d70f2' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%235b70f2' x='70' width='11' height='11'/%3E%3Crect fill='%23596ff2' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23576ef2' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23556ef2' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23536df2' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23516cf2' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%234f6cf2' x='80' width='11' height='11'/%3E%3Crect fill='%234d6bf2' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%234b6bf2' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23496af2' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23476af2' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%234569f2' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%234469f2' x='90' width='11' height='11'/%3E%3Crect fill='%234268f2' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%234068f2' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%233e67f2' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%233c67f2' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%233a67f2' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%233866f2' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%233666f2' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%233466f2' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%233265f2' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%233065f2' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%232e65f2' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%232c65f2' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%232a65f2' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%232864f2' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%232664f2' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%232464f2' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%232264f2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%232064f2' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%231e64f2' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%231c64f2' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.detailing-services-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/red.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/red.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+.tint-bg {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.svc-bg {
+    background-color: #000000;
+    background-image: linear-gradient(45deg, #000000 0%, #7f8c8d 74%);
+}
+
+.platinum-bg {
+
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjOWZhNmIyIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhmOTVhMCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdmODU4ZSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
+
+}
+
+.stripes-bg {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiMxYzY0ZjIiIHN0cm9rZS13aWR0aD0iNC41Ij48L3BhdGg+Cjwvc3ZnPg=="), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2MDkzZjYiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZThmMGZlIj48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
+
+}
+
+
+.animated-ceramic-bg {
+
+    /* https://www.gradient-animator.com/ */
+
+    background: linear-gradient(315deg, #1c64f2, #141b41, #6f9ceb, #98b9f2, #2f29ec);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    -o-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @-o-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+}
+
+.animated-blue-bg {
+
+    /* https://www.gradient-animator.com/ */
+
+    background: linear-gradient(36deg, #1c64f2, #141b41, #6f9ceb, #98b9f2, #918ef4);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    -o-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @-o-keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }
+}
+
+.gold-bg {
+    background:
+        radial-gradient(#c27803 15%, transparent 16%) 0 0,
+        radial-gradient(#c27803 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+
+}
+
+.audi {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+}
+
+.bg-slight-ocean-view {
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.very-blue {
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-ocean {
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.suntek-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/la-ferrari.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/la-ferrari.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.ceramic-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/p1.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/p1.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.carbon-bg {
+    background: black;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/918.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/918.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-footer-section {
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.video-object {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+50&1+0,0+50 */
+    background: -moz-linear-gradient(-45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 70%), url('../assets/img/chiron.jpg');
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 70%), url('../assets/img/chiron.jpg');
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 70%), url('../assets/img/chiron.jpg');
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1), url('../assets/img/chiron.jpg');
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+#herotext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 1em rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.diamondcard {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('https://coolcars.us/wp-content/uploads/2018/06/bugatti-chiron-bugattisupercar-whips-pinterest-of-where-to-buy-a-bugatti-unique-of-where-to-buy-a-bugatti.jpeg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('https://coolcars.us/wp-content/uploads/2018/06/bugatti-chiron-bugattisupercar-whips-pinterest-of-where-to-buy-a-bugatti-unique-of-where-to-buy-a-bugatti.jpeg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/audia6_red.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/audia6_red.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+.card-2 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/sq8.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/sq8.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card-3 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#16262E, rgba(0, 0, 0, 0.1)),
+        url('../assets/img/corvette.jpg');
+    background: linear-gradient(#16262E, rgba(0, 0, 0, 0.1)),
+        url('../assets/img/corvette.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+.card-4 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#16262E, rgba(0, 0, 0, 0.35)),
+        url('../assets/img/bmwx7.jpg');
+    background: linear-gradient(#16262E, rgba(0, 0, 0, 0.35)),
+        url('../assets/img/bmwx7.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card-5 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#001a8d, rgba(36, 36, 36, 0.5)),
+        url('../assets/img/amg_gt.jpg');
+
+    background: linear-gradient(#001a8d, rgba(36, 36, 36, 0.5)),
+        url('../assets/img/amg_gt.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card-6 {
+    background: black;
+    overflow: hidden;
+    background: #01172F;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#01172F, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/rr_cullinan.jpg');
+    background: linear-gradient(#01172F, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/rr_cullinan.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card-7 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#1a0f00, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/leatherconditioning.jpg');
+    background: linear-gradient(#1a0f00, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/leatherconditioning.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.card-8 {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#01172F, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/rr.jpg');
+    background: linear-gradient(#01172F, rgba(0, 0, 0, 0.2)),
+        url('../assets/img/rr.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+
+img {
+    object-fit: cover;
+}
+
+
+.linear {
+    background-image: url("https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.scrim {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), color-stop(19%, rgba(0, 0, 0, 0.738)), color-stop(34%, rgba(0, 0, 0, 0.541)), color-stop(47%, rgba(0, 0, 0, 0.382)), color-stop(56.5%, rgba(0, 0, 0, 0.278)), color-stop(65%, rgba(0, 0, 0, 0.194)), color-stop(73%, rgba(0, 0, 0, 0.126)), color-stop(80.2%, rgba(0, 0, 0, 0.075)), color-stop(86.1%, rgba(0, 0, 0, 0.042)), color-stop(91%, rgba(0, 0, 0, 0.021)), color-stop(95.2%, rgba(0, 0, 0, 0.008)), color-stop(98.2%, rgba(0, 0, 0, 0.002)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.738) 19%, rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%, rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%, rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, rgba(0, 0, 0, 0) 100%);
+}
+
+.ease {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), color-stop(5.3%, rgba(0, 0, 0, 0.917)), color-stop(10.6%, rgba(0, 0, 0, 0.834)), color-stop(15.9%, rgba(0, 0, 0, 0.753)), color-stop(21.3%, rgba(0, 0, 0, 0.672)), color-stop(26.8%, rgba(0, 0, 0, 0.591)), color-stop(32.5%, rgba(0, 0, 0, 0.511)), color-stop(38.4%, rgba(0, 0, 0, 0.433)), color-stop(44.5%, rgba(0, 0, 0, 0.357)), color-stop(50.9%, rgba(0, 0, 0, 0.283)), color-stop(57.7%, rgba(0, 0, 0, 0.213)), color-stop(65%, rgba(0, 0, 0, 0.147)), color-stop(72.9%, rgba(0, 0, 0, 0.089)), color-stop(81.4%, rgba(0, 0, 0, 0.042)), color-stop(90.6%, rgba(0, 0, 0, 0.011)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.917) 5.3%, rgba(0, 0, 0, 0.834) 10.6%, rgba(0, 0, 0, 0.753) 15.9%, rgba(0, 0, 0, 0.672) 21.3%, rgba(0, 0, 0, 0.591) 26.8%, rgba(0, 0, 0, 0.511) 32.5%, rgba(0, 0, 0, 0.433) 38.4%, rgba(0, 0, 0, 0.357) 44.5%, rgba(0, 0, 0, 0.283) 50.9%, rgba(0, 0, 0, 0.213) 57.7%, rgba(0, 0, 0, 0.147) 65%, rgba(0, 0, 0, 0.089) 72.9%, rgba(0, 0, 0, 0.042) 81.4%, rgba(0, 0, 0, 0.011) 90.6%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* ------ Ceramic Pro Page CSS ------- */
+
+.bg-header {
+    background: url(../assets/img/what-does-a-nano-ceramic-coating-do-paint-protection.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-quote {
+    background: url(../assets/img/ceramic-coating-ceramic-pro-car-wrap-vinyl-wrap-ppf.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.diamond-bg {
+    background-color: #233876;
+    background-image: linear-gradient(#233876, rgba(255, 255, 255, 0.1)), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%23a4cafe' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+    background-image: -webkit-linear-gradient(#233876, rgba(255, 255, 255, 0.1)), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%23a4cafe' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.diamond-plain-bg {
+
+
+    background-color: #2149b5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+
+
+}
+
+
+.diamond-cta {
+    background-color: #0099ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3CradialGradient id='a' cx='800' cy='371' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230099ff'/%3E%3Cstop offset='1' stop-color='%2304C'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='800' cy='371' r='60%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230EF' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230EF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1600' height='900'/%3E%3Cg fill='none' stroke='%2303E' stroke-width='10' stroke-miterlimit='10' stroke-opacity='.5'%3E%3Cpolygon points='2277.4 1152 800-1407-677.4 1152'/%3E%3Cpolygon points='800-1372.9-648.8 1136.5 2248.8 1136.5'/%3E%3Cpolygon points='800-1338.8-620.2 1121.1 2220.2 1121.1'/%3E%3Cpolygon points='800-1304.7-591.6 1105.6 2191.6 1105.6'/%3E%3Cpolygon points='800-1270.6-563 1090.2 2163 1090.2'/%3E%3Cpolygon points='800-1236.5-534.4 1074.7 2134.4 1074.7'/%3E%3Cpolygon points='800-1202.4-505.8 1059.3 2105.8 1059.3'/%3E%3Cpolygon points='800-1168.3-477.2 1043.8 2077.2 1043.8'/%3E%3Cpolygon points='800-1134.2-448.6 1028.4 2048.6 1028.4'/%3E%3Cpolygon points='800-1100.1-420 1012.9 2020 1012.9'/%3E%3Cpolygon points='800-1066-391.4 997.5 1991.4 997.5'/%3E%3Cpolygon points='800-1031.9-362.7 982 1962.7 982'/%3E%3Cpolygon points='800-997.8-334.1 966.6 1934.1 966.6'/%3E%3Cpolygon points='800-963.7-305.5 951.1 1905.5 951.1'/%3E%3Cpolygon points='800-929.6-276.9 935.7 1876.9 935.7'/%3E%3Cpolygon points='800-895.5-248.3 920.2 1848.3 920.2'/%3E%3Cpolygon points='800-861.4-219.7 904.7 1819.7 904.7'/%3E%3Cpolygon points='800-827.3-191.1 889.3 1791.1 889.3'/%3E%3Cpolygon points='800-793.2-162.5 873.8 1762.5 873.8'/%3E%3Cpolygon points='800-759.1-133.9 858.4 1733.9 858.4'/%3E%3Cpolygon points='800-725-105.3 842.9 1705.3 842.9'/%3E%3Cpolygon points='800-690.9-76.7 827.5 1676.7 827.5'/%3E%3Cpolygon points='800-656.8-48.1 812 1648.1 812'/%3E%3Cpolygon points='800-622.7-19.4 796.6 1619.4 796.6'/%3E%3Cpolygon points='800-588.6 9.2 781.1 1590.8 781.1'/%3E%3Cpolygon points='800-554.5 37.8 765.7 1562.2 765.7'/%3E%3Cpolygon points='800-520.5 66.4 750.2 1533.6 750.2'/%3E%3Cpolygon points='800-486.4 95 734.8 1505 734.8'/%3E%3Cpolygon points='800-452.3 123.6 719.3 1476.4 719.3'/%3E%3Cpolygon points='800-418.2 152.2 703.9 1447.8 703.9'/%3E%3Cpolygon points='800-384.1 180.8 688.4 1419.2 688.4'/%3E%3Cpolygon points='800-350 209.4 673 1390.6 673'/%3E%3Cpolygon points='800-315.9 238 657.5 1362 657.5'/%3E%3Cpolygon points='800-281.8 266.6 642 1333.4 642'/%3E%3Cpolygon points='800-247.7 295.2 626.6 1304.8 626.6'/%3E%3Cpolygon points='800-213.6 323.9 611.1 1276.1 611.1'/%3E%3Cpolygon points='800-179.5 352.5 595.7 1247.5 595.7'/%3E%3Cpolygon points='800-145.4 381.1 580.2 1218.9 580.2'/%3E%3Cpolygon points='800-111.3 409.7 564.8 1190.3 564.8'/%3E%3Cpolygon points='800-77.2 438.3 549.3 1161.7 549.3'/%3E%3Cpolygon points='800-43.1 466.9 533.9 1133.1 533.9'/%3E%3Cpolygon points='800-9 495.5 518.4 1104.5 518.4'/%3E%3Cpolygon points='800 25.1 524.1 503 1075.9 503'/%3E%3Cpolygon points='800 59.2 552.7 487.5 1047.3 487.5'/%3E%3Cpolygon points='800 93.3 581.3 472.1 1018.7 472.1'/%3E%3Cpolygon points='800 127.4 609.9 456.6 990.1 456.6'/%3E%3Cpolygon points='800 161.5 638.5 441.2 961.5 441.2'/%3E%3Cpolygon points='800 195.6 667.2 425.7 932.8 425.7'/%3E%3Cpolygon points='800 229.7 695.8 410.2 904.2 410.2'/%3E%3Cpolygon points='800 263.8 724.4 394.8 875.6 394.8'/%3E%3Cpolygon points='800 297.9 753 379.3 847 379.3'/%3E%3Cpolygon points='800 332 781.6 363.9 818.4 363.9'/%3E%3C/g%3E%3Crect fill-opacity='.5' fill='url(%23b)' width='1600' height='900'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.diamond-card-bg {
+    background: #779ECB;
+    background: linear-gradient(to bottom, #779ECB 0%, #688FBC 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #779ECB), color-stop(100%, #688FBC));
+    background: -webkit-linear-gradient(top, #779ECB 0%, #688FBC 100%);
+    background: -moz-linear-gradient(top, #779ECB 0%, #688FBC 100%);
+    background: -o-linear-gradient(top, #779ECB 0%, #688FBC 100%);
+    background: -ms-linear-gradient(top, #779ECB 0%, #688FBC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#779ECB', endColorstr='#688FBC', GradientType=0);
+    border: 1px solid #5980AD;
+    box-shadow: inset 0 1px 0 #86ADDA;
+    -webkit-box-shadow: inset 0 1px 0 #86ADDA;
+    -moz-box-shadow: inset 0 1px 0 #86ADDA;
+
+}
+
+.sapphireblue-bg {
+    background: #0067A5;
+    background: linear-gradient(to bottom, #0067A5 0%, #005896 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0067A5), color-stop(100%, #005896));
+    background: -webkit-linear-gradient(top, #0067A5 0%, #005896 100%);
+    background: -moz-linear-gradient(top, #0067A5 0%, #005896 100%);
+    background: -o-linear-gradient(top, #0067A5 0%, #005896 100%);
+    background: -ms-linear-gradient(top, #0067A5 0%, #005896 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067A5', endColorstr='#005896', GradientType=0);
+    border: 1px solid #004987;
+    box-shadow: inset 0 1px 0 #0F76B4;
+    -webkit-box-shadow: inset 0 1px 0 #0F76B4;
+    -moz-box-shadow: inset 0 1px 0 #0F76B4;
+
+}
+
+.hanblue-bg {
+    background: #0018A8;
+    background: linear-gradient(to bottom, #0018A8 0%, #000999 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0018A8), color-stop(100%, #000999));
+    background: -webkit-linear-gradient(top, #0018A8 0%, #000999 100%);
+    background: -moz-linear-gradient(top, #0018A8 0%, #000999 100%);
+    background: -o-linear-gradient(top, #0018A8 0%, #000999 100%);
+    background: -ms-linear-gradient(top, #0018A8 0%, #000999 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0018A8', endColorstr='#000999', GradientType=0);
+    border: 1px solid #00008A;
+    box-shadow: inset 0 1px 0 #0F27B7;
+    -webkit-box-shadow: inset 0 1px 0 #0F27B7;
+    -moz-box-shadow: inset 0 1px 0 #0F27B7;
+}
+
+.USAFA-bg {
+    background: #004F98;
+    background: linear-gradient(to bottom, #004F98 0%, #004089 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #004F98), color-stop(100%, #004089));
+    background: -webkit-linear-gradient(top, #004F98 0%, #004089 100%);
+    background: -moz-linear-gradient(top, #004F98 0%, #004089 100%);
+    background: -o-linear-gradient(top, #004F98 0%, #004089 100%);
+    background: -ms-linear-gradient(top, #004F98 0%, #004089 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004F98', endColorstr='#004089', GradientType=0);
+    border: 1px solid #00317A;
+    box-shadow: inset 0 1px 0 #0F5EA7;
+    -webkit-box-shadow: inset 0 1px 0 #0F5EA7;
+    -moz-box-shadow: inset 0 1px 0 #0F5EA7;
+
+}
+
+
+.ceramic-card-bg {
+    background: black;
+    overflow: hidden;
+    background: #e3a008;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/ceramic_landing_lambo_color.jpg');
+    background: linear-gradient(#000000, rgba(0, 0, 0, 0.25)),
+        url('../assets/img/ceramic_landing_lambo_color.jpg');
+    /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% !important
+}
+
+.ceramic-diamond-bg {
+    background: linear-gradient(45deg, rgba(4, 23, 92, 0.45) 0%, rgba(4, 23, 92, 0.45) 25%, rgba(23, 46, 132, 0.45) 25%, rgba(23, 46, 132, 0.45) 50%, rgba(42, 70, 173, 0.45) 50%, rgba(42, 70, 173, 0.45) 75%, rgba(61, 93, 213, 0.45) 75%, rgba(61, 93, 213, 0.45) 100%), linear-gradient(135deg, rgb(8, 63, 29) 0%, rgb(8, 63, 29) 25%, rgb(39, 70, 68) 25%, rgb(39, 70, 68) 50%, rgb(69, 77, 107) 50%, rgb(69, 77, 107) 75%, rgb(100, 84, 146) 75%, rgb(100, 84, 146) 100%);
+}
+
+.element-1 {
+    box-shadow:
+        12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.white-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#faca15), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(#faca15 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 
 @tailwind components;
 @tailwind utilities;
-
-
-.hero {
-    background: linear-gradient(#0006, #0006), url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg);
-  /*   background-image: url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg); */
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-  /*   background-color: #eee; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-  .c-card {
-    img {    
-      transition: transform .3s ease-in-out; 
-    }
-    
-    &:hover {
-      img {
-        transform: scale(1.05)
-      }
-    }
-  }
-
-.bg-gradient {
-  background: #fbcf2c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #faca15, #fbcf2c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #faca15, #fbcf2c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.body-gradient {
-  background-image: linear-gradient( 135deg, #faca15 10%, #F8D800 100%);
-}

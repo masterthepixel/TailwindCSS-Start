@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1453" height="142" viewBox="0 0 1453 142">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #fff;
+        font-family: Inter;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: #ff6a21;
+      }
+    </style>
+  </defs>
+  <text id="Smeedies_Maritime" data-name="Smeedies Maritime" class="cls-1" x="11.613" y="126.957">Smeedies<tspan class="cls-2"> <tspan class="cls-3">Maritime</tspan></tspan></text>
+</svg>

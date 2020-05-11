@@ -1,32 +1,65 @@
-var min_w = 300;
-var vid_w_orig;
-var vid_h_orig;
+// variables
+var $header_top = $('.header-top');
+var $nav = $('nav');
 
-$(function () {
 
-  vid_w_orig = parseInt($('video').attr('width'));
-  vid_h_orig = parseInt($('video').attr('height'));
 
-  $(window).resize(function () { fitVideo(); });
-  $(window).trigger('resize');
-
+// toggle menu 
+$header_top.find('a').on('click', function () {
+  $(this).parent().toggleClass('open-menu');
 });
 
-function fitVideo() {
 
-  $('#video-viewport').width($('.fullsize-video-bg').width());
-  $('#video-viewport').height($('.fullsize-video-bg').height());
 
-  var scale_h = $('.fullsize-video-bg').width() / vid_w_orig;
-  var scale_v = $('.fullsize-video-bg').height() / vid_h_orig;
-  var scale = scale_h > scale_v ? scale_h : scale_v;
+// fullpage customization
+$('#fullpage').fullpage({
+  sectionsColor: ['', '', '', '', '', ''],
+  sectionSelector: '.vertical-scrolling',
+  slideSelector: '.horizontal-scrolling',
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: false,
+  lazyLoading: true,
+  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection', 'ninthSection', 'tenthSection'],
+  menu: '#menu',
 
-  if (scale * vid_w_orig < min_w) { scale = min_w / vid_w_orig; };
+  afterLoad: function (anchorLink, index) {
+    $header_top.css('background', 'rgba(0, 47, 77, .3)');
+    $nav.css('background', 'rgba(0, 47, 77, .25)');
+    if (index == 5) {
+      $('#fp-nav').hide();
+    }
+  },
 
-  $('video').width(scale * vid_w_orig);
-  $('video').height(scale * vid_h_orig);
+  onLeave: function (index, nextIndex, direction) {
+    if (index == 6) {
+      $('#fp-nav').show();
+    }
+  },
 
-  $('#video-viewport').scrollLeft(($('video').width() - $('.fullsize-video-bg').width()) / 2);
-  $('#video-viewport').scrollTop(($('video').height() - $('.fullsize-video-bg').height()) / 2);
+  afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+    if (anchorLink == 'fifthSection' && slideIndex == 1) {
+      $.fn.fullpage.setAllowScrolling(false, 'up');
+      $header_top.css('background', 'transparent');
+      $nav.css('background', 'transparent');
+      $(this).css('background', '#374140');
+      $(this).find('h2').css('color', 'white');
+      $(this).find('h3').css('color', 'white');
+      $(this).find('p').css(
+        {
+          'color': '#DC3522',
+          'opacity': 1,
+          'transform': 'translateY(0)'
+        }
+      );
+    }
+  },
 
-};
+  onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+    if (anchorLink == 'ninthSection' && slideIndex == 1) {
+      $.fn.fullpage.setAllowScrolling(true, 'up');
+      $header_top.css('background', 'rgba(0, 47, 77, .3)');
+      $nav.css('background', 'rgba(0, 47, 77, .25)');
+    }
+  }
+});
