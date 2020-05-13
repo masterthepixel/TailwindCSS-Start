@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 
   <!-- Animate On Screen -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -66,7 +65,38 @@
 
 </head>
 
-<body class="antialiased debug-screens body-gradient">
+<body class="antialiased debug-screens yellow-gradient">
+
+  <!-- Navigation -->
+  <nav class="shadow-2xl nav-rush-gradient">
+    <div class="container px-6 py-3 mx-auto">
+      <div class="items-center justify-between md:flex">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
+          </div>
+          <div>
+            <a href="#" class="text-xl font-bold text-gray-800 hover:text-gray-700 md:text-2xl"></a>
+          </div>
+          <div class="md:hidden"><button type="button"
+              class="block text-yellow-300 hover:text-yellow-300 focus:text-yellow-200 focus:outline-none"><svg
+                viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                </path>
+              </svg></button></div>
+        </div>
+        <div class="flex flex-col hidden mt-3 md:flex-row md:mt-0 md:block"><a href="#"
+            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">Home</a><a
+            href="#"
+            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">Contact</a><a
+            href="#"
+            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">About
+            Us</a></div>
+      </div>
+    </div>
+  </nav>
+  <!-- /End of Navigation -->
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -95,104 +125,8 @@
 
 
 
-  <!-- Navigation -->
-  <nav x-data="{ open: false }" class="">
-    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-20 ">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <button @click="open = !open"
-            class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
-            <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center flex-1 sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0">
-            <img class="block w-auto lg:hidden" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-            <img class="hidden w-auto lg:block" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-          </div>
-          <div class="hidden sm:block sm:ml-6">
-            <!-- Desktop Menu Items -->
-            <div class="flex items-center">
-              <a href="/"
-                class="px-3 py-2 font-semibold leading-5 text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-sm focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
 
-              <a href="rush.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Rush</a>
-              <a href="accelerator.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Accelerator</a>
-              <a href="connect.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Connect</a>
-              <a href="capital.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Capital</a>
-              <a href="associates.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Associates</a>
-              <a href="contactus.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Contact</a>
-            </div>
-          </div>
-        </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-          <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
-            <div>
-              <button @click="open = !open"
-                class="flex transition duration-150 ease-in-out border-2 border-transparent rounded-full text-inter-sm focus:outline-none focus:border-white">
-                <svg class="w-6 h-6" stroke="white" fill="none" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                </svg>
-              </button>
-            </div>
-            <div x-show="open" x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
-              x-transition:enter-end="transform opacity-100 scale-100"
-              x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
-              x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
-              <div class="py-1 bg-white rounded-md shadow-xs">
-                <a href="tel:+8884880349"
-                  class="block px-4 py-2 leading-5 text-blue-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Call
-                  Us</a>
-                <a href="contactus.html"
-                  class="block px-4 py-2 leading-5 text-blue-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Email
-                  Us</a>
-                <a href="contactus.html"
-                  class="block px-4 py-2 leading-5 text-blue-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Contact
-                  Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile Menu Items -->
-    <div :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden">
-      <div class="px-2 pt-2 pb-3">
-        <a href="/"
-          class="block px-3 py-2 font-medium text-white transition duration-150 ease-in-out bg-yellow-400 rounded-md text-inter-base focus:outline-none focus:text-white focus:bg-yellow-300">Home</a>
-
-        <a href="rush.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Rush</a>
-        <a href="accelerator.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Accelerator</a>
-        <a href="connect.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Connect</a>
-        <a href="capital.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Capital</a>
-        <a href="associates.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Associates</a>
-        <a href="contactus.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Contact</a>
-      </div>
-    </div>
-  </nav>
-  <!-- /End of Navigation -->
 
 
 
@@ -219,9 +153,7 @@
 
         <div class="w-full p-4 ... h-full overflow-hidden pb-8">
           <a href="" class="block overflow-hidden rounded-lg shadow-md bg-gray-50 c-card hover:shadow-xl">
-            <div class="relative py-64 overflow-hidden">
-              <img class="absolute inset-0 object-cover w-full h-full" src="./assets/img/horsepower-PK3JB9D.jpg" alt="">
-            </div>
+
             <div class="px-6 py-6 text-justify">
 
               <h2

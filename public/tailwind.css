@@ -1,12 +1,12 @@
 @tailwind base;
 
-.nav{
-    height: 40px;
-    width:auto;
-    height: 40px;
-    width:auto;
-    position:fixed;
-    z-index: 100;
+.nav {
+  height: 40px;
+  width: auto;
+  height: 40px;
+  width: auto;
+  position: fixed;
+  z-index: 100;
 }
 
 @tailwind components;
@@ -14,38 +14,60 @@
 
 
 .hero {
-    background: linear-gradient(#0006, #0006), url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg);
+  background: linear-gradient(#0006, #0006), url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg);
   /*   background-image: url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg); */
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
   /*   background-color: #eee; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .c-card {
-    img {    
-      transition: transform .3s ease-in-out; 
-    }
-    
-    &:hover {
-      img {
-        transform: scale(1.05)
-      }
+
+.c-card {
+  img {
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05)
     }
   }
+}
 
 .bg-gradient {
-  background: #fbcf2c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #faca15, #fbcf2c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #faca15, #fbcf2c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fbcf2c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #faca15, #fbcf2c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #faca15, #fbcf2c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.body-gradient {
-  background-image: linear-gradient( 135deg, #faca15 10%, #F8D800 100%);
+/* ===================== RUSH PAGE CSS ===================== */
+
+
+.yellow-gradient {
+  background-image: linear-gradient(135deg, #faca15 10%, #F8D800 100%);
+}
+
+.nav-rush-gradient {
+  background: #0247FE;
+  background: linear-gradient(to bottom, #0247FE 0%, #0038EF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0247FE), color-stop(100%, #0038EF));
+  background: -webkit-linear-gradient(top, #0247FE 0%, #0038EF 100%);
+  background: -moz-linear-gradient(top, #0247FE 0%, #0038EF 100%);
+  background: -o-linear-gradient(top, #0247FE 0%, #0038EF 100%);
+  background: -ms-linear-gradient(top, #0247FE 0%, #0038EF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0247FE', endColorstr='#0038EF', GradientType=0);
+  border: 1px solid #0029E0;
+  box-shadow: inset 0 1px 0 #1156FF;
+  -webkit-box-shadow: inset 0 1px 0 #1156FF;
+  -moz-box-shadow: inset 0 1px 0 #1156FF;
+
 }
