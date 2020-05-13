@@ -23,6 +23,11 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+  <!-- Main Menu -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+
 
   <!-- Animate On Screen -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -67,35 +72,74 @@
 
 <body class="antialiased debug-screens yellow-gradient">
 
+
+
+
+
+
+
+
+
   <!-- Navigation -->
-  <nav class="shadow-2xl nav-rush-gradient">
-    <div class="container px-6 py-3 mx-auto">
-      <div class="items-center justify-between md:flex">
-        <div class="flex items-center justify-between">
-          <div>
-            <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-          </div>
-          <div>
-            <a href="#" class="text-xl font-bold text-gray-800 hover:text-gray-700 md:text-2xl"></a>
-          </div>
-          <div class="md:hidden"><button type="button"
-              class="block text-yellow-300 hover:text-yellow-300 focus:text-yellow-200 focus:outline-none"><svg
-                viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                <path
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                </path>
-              </svg></button></div>
-        </div>
-        <div class="flex flex-col hidden mt-3 md:flex-row md:mt-0 md:block"><a href="#"
-            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">Home</a><a
-            href="#"
-            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">Contact</a><a
-            href="#"
-            class="font-bold text-gray-100 text-yellow-300 text-inter-base hover: hover:font-semi-bold md:mx-4">About
-            Us</a></div>
+
+  <nav class="flex flex-wrap items-center p-3 shadow-2xl nav-rush-gradient">
+    <a href="#" class="inline-flex items-center p-2 mr-4">
+      <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
+    </a>
+    <button class="inline-flex p-3 ml-auto rounded outline-none hover:bg-gray-900 lg:hidden nav-toggler"
+      data-target="#navigation">
+      <span class="font-semibold tracking-widest text-white text-inter-base hover:text-yellow-300 ">MENU</span>
+    </button>
+    <div class="hidden w-full top-navbar lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+      <div
+        class="flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Home</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Rush</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Accelerator</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Connect</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Capital</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Associates</span>
+        </a>
+        <a href="#"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold">
+          <span>Contact Us</span>
+        </a>
       </div>
     </div>
   </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".nav-toggler").each(function (_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function () {
+          $(target).animate({
+            height: "toggle"
+          });
+        });
+      });
+    });
+
+  </script>
   <!-- /End of Navigation -->
 
   <!-- Load Facebook SDK for JavaScript -->
