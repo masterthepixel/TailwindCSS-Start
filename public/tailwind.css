@@ -124,22 +124,21 @@
 
 
 .honey-comb {
-  background:
   
-    radial-gradient(circle farthest-side at 0% 50%, #ffe534 23.5%, rgba(240, 166, 17, 0) 0)21px 30px,
-    radial-gradient(circle farthest-side at 0% 50%, #f9ce0e 24%, rgba(240, 166, 17, 0) 0)19px 30px,
-    linear-gradient(#ffe534 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, #ffe534 0)0 0,
-    linear-gradient(150deg, #ffe534 24%, #f9ce0e 0, #f9ce0e 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #f9ce0e 0, #f9ce0e 76%, #ffe534 0)0 0,
-    linear-gradient(30deg, #ffe534 24%, #f9ce0e 0, #f9ce0e 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #f9ce0e 0, #f9ce0e 76%, #ffe534 0)0 0,
-    linear-gradient(90deg, #f9ce0e 2%, #ffe534 0, #ffe534 98%, #f9ce0e 0%)0 0 #ffe534;
-  background-size: 40px 60px;
+  background:
+linear-gradient(45deg, #fbcd19 45px, transparent 45px)64px 64px,
+linear-gradient(45deg, #fbcd19 45px, transparent 45px,transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
+linear-gradient(-45deg, #fbcd19 23px, transparent 23px, transparent 68px,#fbcd19 68px,#fbcd19 113px,transparent 113px,transparent 158px,#fbcd19 158px);
+background-color:#E1B613;
+background-size: 128px 128px;
+
 }
 
 
 
 
 .yellow-gradient {
-  background-image: linear-gradient(135deg, #faca15 10%, #ffe534 100%);
+  background-image: linear-gradient(135deg, #faca15 10%, #fcd320 100%);
 }
 
 .nav-rush-gradient {
