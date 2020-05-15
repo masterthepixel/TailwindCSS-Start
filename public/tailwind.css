@@ -13,6 +13,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  background-size: cover;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+  }
+}
+
 
 .hero {
   background: linear-gradient(#0006, #0006), url(https://woocommerce-188042-967496.cloudwaysapps.com/wp-content/uploads/2019/09/business-handshake-success-deal-concept.jpg);
@@ -160,12 +179,9 @@ background-size: 128px 128px;
 
 .bg-rush-card {
   background: linear-gradient(180deg, #faca15 5.66%, rgb(251, 203, 45) 92.04%);
-
-
-
-
-
 }
+
+
 
 /* .material-icons {
   background: url('data:image/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAyUlEQVR4nO3YwQqCQBSF4f9pInz5VHyusLR1LSxaCTdUvI3/B2d/5zoMckCSJEmSvs5ADdyB559nBNr3mcKH7xMMvnb66BLqBMNulSaygBKu/VyGyALGBIPuuoA2waBb5RJZQKmP4BU4RRbwWULDdGX2HnxpBqYvHz68JEk6tgrogAf7/8gszc99QAXcEgy+dsJ9QJdg2K0S6gNKuPZzsQ+ILMA+APsA+wBJknRc9gEJBl879gHYB9gH2AdEFmAfgH2AJEmSpMK9AOpaEdR/AakzAAAAAElFTkSuQmCC');
