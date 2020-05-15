@@ -9,6 +9,30 @@
   z-index: 100;
 }
 
+.z-negative{
+  z-index: -1;
+}
+
+.header {
+  height: auto;
+  text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+
+}
+
+
+.video-cta {
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    height: 762px;
+  }
+
+  .video-cta {
+    height: 582px;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 

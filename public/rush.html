@@ -87,6 +87,31 @@
 
 <body class="antialiased debug-screens yellow-gradient">
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v4.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="257218737765439" theme_color="#2c0c44"
+    logged_in_greeting="Hey! Want some freight to move?" logged_out_greeting="Hey! Want some freight to move?">
+  </div>
+
 
 
 
@@ -103,7 +128,8 @@
     </a>
     <button class="inline-flex p-3 ml-auto rounded outline-none hover:bg-gray-900 lg:hidden nav-toggler"
       data-target="#navigation">
-      <span class="font-semibold tracking-widest text-white text-inter-base hover:text-yellow-300 ">MENU</span>
+      <span
+        class="font-semibold tracking-widest text-white text-inter-xs sm:text-inter-lg hover:text-yellow-300 ">MENU</span>
     </button>
     <div class="hidden w-full top-navbar lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
       <div
@@ -156,71 +182,53 @@
   </script>
   <!-- /End of Navigation -->
 
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v4.0'
-      });
-    };
 
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat" attribution=setup_tool page_id="257218737765439" theme_color="#2c0c44"
-    logged_in_greeting="Hey! Want some freight to move?" logged_out_greeting="Hey! Want some freight to move?">
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="relative ">
-    <div class="lg:absolute lg:inset-0">
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img class="object-cover w-full h-56 lg:absolute lg:h-full"
-          src="https://images.unsplash.com/photo-1536332016596-dc50468cbf41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt="" />
-      </div>
+  <header class="relative py-8 header lg:overflow-hidden">
+    <div class="absolute inset-0 opacity-50 z-negative lg:opacity-75">
+      <video src="https://freightleads.netlify.com/assets/vid/lion-ghost.mp4" autoplay muted loop
+        class="object-cover w-full h-full"></video>
     </div>
-    <div class="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-      <div class="lg:pr-8">
-        <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-          <h2
-            class="font-extrabold leading-10 tracking-tight text-gray-900 text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-6xl">
-            Freight Leads
-            <br class="xl:hidden" />
-            <span class="text-indigo-600">RUSH&#8482;
-            </span>
-          </h2>
-          <p class="mt-4 leading-7 text-gray-800 text-inter-lg sm:mt-3">
-            A healthy and profitable book of
-            business is
-            dependent on quality shippers that move large volumes of freight consistently with you as their
-            preferred transportation provider. Your customers require your complete and undivided attention for
-            ensuring safe and seamless delivery of their goods every single time.
-          </p>
-
+    <div class="container px-4 py-4 mx-auto lg:mt-56 lg:px-8">
+      <div class="border-white md:pl-8 md:border-l">
+        <p class="font-bold leading-none tracking-wide text-yellow-300 uppercase text-inter-sm">be the leader of the freight
+          jungle</p>
+        <h1
+          class="font-sans font-black uppercase text-gray-50 text-inter-3xl md:text-inter-4xl xl:text-inter-6xl md:leading-none">
+          Freightleads
+          RUSH™
+        </h1>
+        <p class="w-full font-medium leading-tight tracking-tight text-gray-50 text-inter-lg md:max-w-3xl"> A
+          healthy and profitable book of
+          business is
+          dependent on quality shippers that move large volumes of freight consistently with you as their preferred
+          transportation provider. Your customers require your complete and undivided attention for ensuring safe and
+          seamless delivery of their goods every single time. </p>
+        <div class="inline-flex py-2">
+          <button
+            class="px-5 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent text-inter-base rounded-l-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline">
+            Learn More
+          </button>
+          <button
+            class="px-5 py-3 font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-yellow-300 border border-transparent rounded-r-md text-inter-base hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300">
+            Contact Us
+          </button>
         </div>
       </div>
+
     </div>
-  </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="py-12 ">
     <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -228,7 +236,7 @@
         <h3 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           Capitalize on low hanging fruit
         </h3>
-        <p class="max-w-2xl mt-4 text-xl leading-7 text-gray-800 lg:mx-auto">
+        <p class="max-w-2xl mt-4 leading-7 text-gray-800 text-inter-xl lg:mx-auto">
           Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
           corporate strategy foster collaborative thinking to further the overall value proposition. </p>
       </div>

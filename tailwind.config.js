@@ -66,7 +66,7 @@ module.exports = {
       minWidth: ['responsive'],
       objectFit: ['responsive'],
       objectPosition: ['responsive'],
-      opacity: ['responsive', 'hover', 'focus'],
+      opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
       order: ['responsive'],
       outline: ['responsive', 'focus'],
       overflow: ['responsive'],
