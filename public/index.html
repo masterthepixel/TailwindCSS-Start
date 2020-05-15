@@ -104,102 +104,65 @@
 
 
   <!-- Navigation -->
-  <nav x-data="{ open: false }" class="">
-    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-20 ">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <button @click="open = !open"
-            class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
-            <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center flex-1 sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0">
-            <img class="block w-auto lg:hidden" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-            <img class="hidden w-auto lg:block" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-          </div>
-          <div class="hidden sm:block sm:ml-6">
-            <!-- Desktop Menu Items -->
-            <div class="flex items-center">
-              <a href="/"
-                class="px-3 py-2 font-semibold leading-5 text-white transition duration-150 ease-in-out bg-gray-900 rounded-md text-inter-sm focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
 
-              <a href="rush.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Rush</a>
-              <a href="accelerator.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Accelerator</a>
-              <a href="connect.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Connect</a>
-              <a href="capital.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Capital</a>
-              <a href="associates.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Associates</a>
-              <a href="contactus.html"
-                class="px-3 py-2 ml-4 font-semibold leading-5 text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-sm hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-400">Contact</a>
-            </div>
-          </div>
-        </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-
-          <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
-            <div>
-              <button @click="open = !open"
-                class="flex transition duration-150 ease-in-out border-2 border-transparent rounded-full text-inter-sm focus:outline-none focus:border-white">
-                <svg class="w-6 h-6" stroke="white" fill="none" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                </svg>
-              </button>
-            </div>
-            <div x-show="open" x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
-              x-transition:enter-end="transform opacity-100 scale-100"
-              x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
-              x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
-              <div class="py-1 bg-white rounded-md shadow-xs">
-                <a href="tel:+8884880349"
-                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Call
-                  Us</a>
-                <a href="contactus.html"
-                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Email
-                  Us</a>
-                <a href="contactus.html"
-                  class="block px-4 py-2 leading-5 text-gray-700 transition duration-150 ease-in-out text-inter-sm hover:bg-gray-100 focus:outline-none focus:bg-gray-100">Contact
-                  Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile Menu Items -->
-    <div :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden">
-      <div class="px-2 pt-2 pb-3">
-        <a href="/"
-          class="block px-3 py-2 font-medium text-white transition duration-150 ease-in-out bg-yellow-400 rounded-md text-inter-base focus:outline-none focus:text-white focus:bg-yellow-300">Home</a>
-
+  <nav class="sticky top-0 z-20 flex flex-wrap items-center p-3 shadow-2xl nav-rush-gradient">
+    <a href="#" class="inline-flex items-center p-2 mr-4">
+      <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
+    </a>
+    <button class="inline-flex p-3 ml-auto rounded outline-none hover:bg-gray-900 lg:hidden nav-toggler"
+      data-target="#navigation">
+      <span
+        class="font-semibold tracking-widest text-white text-inter-xs sm:text-inter-lg hover:text-yellow-300 ">MENU</span>
+    </button>
+    <div class="hidden w-full top-navbar lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+      <div
+        class="flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
+        <a href="index.html"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Home</span>
+        </a>
         <a href="rush.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Rush</a>
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Rush</span>
+        </a>
         <a href="accelerator.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Accelerator</a>
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Accelerator</span>
+        </a>
         <a href="connect.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Connect</a>
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Connect</span>
+        </a>
         <a href="capital.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Capital</a>
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Capital</span>
+        </a>
         <a href="associates.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Associates</a>
-        <a href="contactus.html"
-          class="block px-3 py-2 mt-1 font-medium text-gray-300 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-white hover:bg-yellow-400 focus:outline-none focus:text-white focus:bg-yellow-300">Contact</a>
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Associates</span>
+        </a>
+        <a href="contact.html"
+          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
+          <span>Contact Us</span>
+        </a>
       </div>
     </div>
   </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".nav-toggler").each(function (_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function () {
+          $(target).animate({
+            height: "toggle"
+          });
+        });
+      });
+    });
+  </script>
   <!-- /End of Navigation -->
 
 
@@ -220,7 +183,6 @@
     </section>
   </main> -->
 
-
   <section class="shadow-2xl video-section">
     <div class="video">
       <video class="video-object" width="1920" height="1280" autoplay muted loop>
@@ -230,12 +192,15 @@
     </div>
     <div class="container px-4 text-center">
       <h1 id="herotext" data-aos="fade-down" data-aos-duration="1000"
-        class="mt-1 font-black leading-10 tracking-tight text-yellow-300 text-inter-4xl sm:leading-none sm:text-inter-6xl lg:text-inter-5xl xl:text-inter-6xl">
+        class="pt-1 mb-1 font-extrabold leading-none tracking-tight text-white text-shadow-drop-br text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-6xl">
         be the
-        leader of the freight jungle
+        leader of the <br class="xl:hidden" />
+        <span class="text-yellow-300">freight jungle</span>
       </h1>
     </div>
   </section>
+
+
 
 
 
