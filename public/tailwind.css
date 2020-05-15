@@ -9,30 +9,7 @@
   z-index: 100;
 }
 
-.z-negative{
-  z-index: -1;
-}
 
-.header {
-  height: auto;
-  text-shadow: 0px 2px 4px rgba(0,0,0,.4);
-
-}
-
-
-.video-cta {
-  height: auto;
-}
-
-@media (min-width: 1024px) {
-  .header {
-    height: 762px;
-  }
-
-  .video-cta {
-    height: 582px;
-  }
-}
 @tailwind components;
 @tailwind utilities;
 
@@ -74,6 +51,76 @@
 }
 
 /* ===================== RUSH PAGE CSS ===================== */
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  /* Allows right click menu on the video */
+  background: url("https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png") left top repeat;
+  opacity: 0.3;
+}
+
+
+.z-negative{
+  z-index: -1;
+}
+
+.header {
+  height: auto;
+}
+
+
+.video-cta {
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    height: 762px;
+  }
+
+  .video-cta {
+    height: 582px;
+  }
+}
+
+
+
+.text-shadow-drop-br {
+  /* https://animista.net/play/text/shadow-drop/text-shadow-drop-br */
+	-webkit-animation: text-shadow-drop-br 1200ms both;
+	        animation: text-shadow-drop-br 1200ms both;
+}
+
+
+/**
+ * ----------------------------------------
+ * @animation text-shadow-drop-br
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-shadow-drop-br {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-br {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+
 
 
 .yellow-gradient {
