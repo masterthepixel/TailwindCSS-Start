@@ -41,7 +41,7 @@
  * If omitted, Tailwind will append these classes to the very end of
  * your stylesheet by default.
  */
- @tailwind screens;
+@tailwind screens;
 
 
 
@@ -145,13 +145,14 @@
 
 
 .honey-comb {
-  
+
   background:
-linear-gradient(45deg, #fbcd19 45px, transparent 45px)64px 64px,
-linear-gradient(45deg, #fbcd19 45px, transparent 45px,transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
-linear-gradient(-45deg, #fbcd19 23px, transparent 23px, transparent 68px,#fbcd19 68px,#fbcd19 113px,transparent 113px,transparent 158px,#fbcd19 158px);
-background-color:#E1B613;
-background-size: 128px 128px;
+    linear-gradient(45deg, #fbcd19 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #fbcd19 45px, transparent 45px, transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
+    linear-gradient(-45deg, #fbcd19 23px, transparent 23px, transparent 68px, #fbcd19 68px, #fbcd19 113px, transparent 113px, transparent 158px, #fbcd19 158px);
+  background-color: #E1B613;
+  background-size: 128px 128px;
+  background-attachment: fixed;
 
 }
 
