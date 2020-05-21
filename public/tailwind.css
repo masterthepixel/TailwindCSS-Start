@@ -140,6 +140,40 @@
 
 }
 
+/* ===================== Accelerator PAGE CSS ===================== */
+.accelerator-overlay {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#340382+0,ffffff+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#340382', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+.accelerator-stripes {
+  /* https://www.heropatterns.com/ */
+  background-color: #052F5F;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-accelerator-card {
+  background: linear-gradient(177deg, #052F5F, #febf04);
+  background-size: 200% 200%;
+  opacity: 0.8;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+
+.accelerator-gradient {
+  background-image: linear-gradient(135deg, #052F5F 10%, #fcd320 100%);
+}
+
 /* ===================== RUSH PAGE CSS ===================== */
 
 .video-overlay {
@@ -152,8 +186,6 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#340382', endColorstr='#00ffffff', GradientType=0);
   /* IE6-9 */
-
-
 }
 
 
@@ -239,6 +271,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   background-image: linear-gradient(135deg, #faca15 10%, #fcd320 100%);
 }
 
+
+
+
+
 .nav-rush-gradient {
   background: #340382;
   background: linear-gradient(to bottom, #340382 0%, #0038EF 100%);
@@ -279,9 +315,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   background-size: 200% 200%;
   opacity: 0.8;
 
-  -webkit-animation: AnimationName 8s ease infinite;
-  -moz-animation: AnimationName 84s ease infinite;
-  animation: AnimationName 8s ease infinite;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
