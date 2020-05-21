@@ -140,39 +140,8 @@
 
 }
 
-/* ===================== Accelerator PAGE CSS ===================== */
-.accelerator-overlay {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#340382+0,ffffff+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#340382', endColorstr='#00ffffff', GradientType=0);
-  /* IE6-9 */
-}
-
-.accelerator-stripes {
-  /* https://www.heropatterns.com/ */
-  background-color: #052F5F;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.bg-accelerator-card {
-  background: linear-gradient(177deg, #052F5F, #febf04);
-  background-size: 200% 200%;
-  opacity: 0.8;
-
-  -webkit-animation: AnimationName 4s ease infinite;
-  -moz-animation: AnimationName 4s ease infinite;
-  animation: AnimationName 4s ease infinite;
-}
 
 
-.accelerator-gradient {
-  background-image: linear-gradient(135deg, #052F5F 10%, #fcd320 100%);
-}
 
 /* ===================== RUSH PAGE CSS ===================== */
 
@@ -250,9 +219,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 .arrows {
 
   background:
-    linear-gradient(45deg, #fbcd19 45px, transparent 45px)64px 64px,
-    linear-gradient(45deg, #fbcd19 45px, transparent 45px, transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
-    linear-gradient(-45deg, #fbcd19 23px, transparent 23px, transparent 68px, #fbcd19 68px, #fbcd19 113px, transparent 113px, transparent 158px, #fbcd19 158px);
+    linear-gradient(45deg, #1e429f 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #1e429f 45px, transparent 45px, transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
+    linear-gradient(-45deg, #1e429f 23px, transparent 23px, transparent 68px, #1e429f 68px, #1e429f 113px, transparent 113px, transparent 158px, #1e429f 158px);
   background-color: #E1B613;
   background-size: 128px 128px;
   background-attachment: fixed;
@@ -261,7 +230,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 
 .yellow-stripes {
   /* https://www.heropatterns.com/ */
-  background-color: #fbcd19;
+  background-color: #1e429f;
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -270,7 +239,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 .yellow-gradient {
   background-image: linear-gradient(135deg, #faca15 10%, #fcd320 100%);
 }
-
 
 
 
@@ -360,4 +328,61 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   100% {
     background-position: 28% 0%
   }
+}
+
+
+/* ===================== Accelerator PAGE CSS ===================== */
+.accelerator-overlay {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#340382+0,ffffff+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(52, 3, 130, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#340382', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+.accelerator-arrows {
+
+  background-color: #052f5f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%2304264c' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+
+}
+
+
+.accelerator-stripes {
+  /* https://www.heropatterns.com/ */
+  background-color: #052F5F;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.accelerator-diamonds {
+  background-color: #052f5f;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23052f5f' width='11' height='11'/%3E%3Crect fill='%23063060' x='10' width='11' height='11'/%3E%3Crect fill='%23073060' y='10' width='11' height='11'/%3E%3Crect fill='%23083161' x='20' width='11' height='11'/%3E%3Crect fill='%23093261' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%230a3262' y='20' width='11' height='11'/%3E%3Crect fill='%230b3362' x='30' width='11' height='11'/%3E%3Crect fill='%230c3463' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%230d3563' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%230e3564' y='30' width='11' height='11'/%3E%3Crect fill='%230f3665' x='40' width='11' height='11'/%3E%3Crect fill='%23103765' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23113766' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23123866' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23133967' y='40' width='11' height='11'/%3E%3Crect fill='%23143967' x='50' width='11' height='11'/%3E%3Crect fill='%23153a68' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23163b68' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23173c69' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23173c6a' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23183d6a' y='50' width='11' height='11'/%3E%3Crect fill='%23193e6b' x='60' width='11' height='11'/%3E%3Crect fill='%231a3e6b' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%231b3f6c' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%231c406c' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%231c406d' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%231d416d' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%231e426e' x='70' width='11' height='11'/%3E%3Crect fill='%231f436e' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%2320436f' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23204470' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23214570' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23224571' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23234671' x='80' width='11' height='11'/%3E%3Crect fill='%23244772' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23244872' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23254873' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23264973' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23274a74' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23274a74' x='90' width='11' height='11'/%3E%3Crect fill='%23284b75' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23294c75' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%232a4d76' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%232b4d76' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%232b4e77' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%232c4f78' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%232d5078' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%232e5079' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%232e5179' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%232f527a' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%2330527a' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%2331537b' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%2332547b' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%2332557c' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%2333557c' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%2334567d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%2335577d' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%2335587e' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%2336587e' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%2337597f' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+.bg-accelerator-card {
+  background: linear-gradient(177deg, #052f5f, #042143);
+  background-size: 400% 400%;
+  opacity: 0.9;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+.accelerator-pattern {
+  /* https://www.heropatterns.com/ */
+  background-color: #052f5f;
+background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%230a4f9f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+.accelerator-gradient {
+  background-image: linear-gradient(135deg, #052F5F 10%, #fcd320 100%);
 }
