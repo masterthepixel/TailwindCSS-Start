@@ -219,9 +219,9 @@
 .arrows {
 
   background:
-    linear-gradient(45deg, #1e429f 45px, transparent 45px)64px 64px,
-    linear-gradient(45deg, #1e429f 45px, transparent 45px, transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
-    linear-gradient(-45deg, #1e429f 23px, transparent 23px, transparent 68px, #1e429f 68px, #1e429f 113px, transparent 113px, transparent 158px, #1e429f 158px);
+    linear-gradient(45deg, #faca15 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #faca15 45px, transparent 45px, transparent 91px, #E1B613 91px, #E1B613 135px, transparent 135px),
+    linear-gradient(-45deg, #faca15 23px, transparent 23px, transparent 68px, #faca15 68px, #faca15 113px, transparent 113px, transparent 158px, #faca15 158px);
   background-color: #E1B613;
   background-size: 128px 128px;
   background-attachment: fixed;
@@ -230,7 +230,8 @@
 
 .yellow-stripes {
   /* https://www.heropatterns.com/ */
-  background-color: #1e429f;
+  background-color:  #faca15;
+  ;
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
