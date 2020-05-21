@@ -47,25 +47,15 @@
 
   <!-- Preconnect to required origins -->
 
-  <link rel="dns-prefetch" href="https://freightleads.netlify.app">
-  <link rel="dns-prefetch" href="https://vars.hotjar.com">
-  <link rel="dns-prefetch" href="https://static.hotjar.com">
-  <link rel="dns-prefetch" href="https://script.hotjar.com">
-  <link rel="dns-prefetch" href="https://www.facebook.com">
-  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="preload" href="https://freightleads.netlify.app">
+  <link rel="preload" href="https://vars.hotjar.com">
+  <link rel="preload" href="https://static.hotjar.com">
+  <link rel="preload" href="https://script.hotjar.com">
+  <link rel="preload" href="https://www.facebook.com">
+  <link rel="preload" href="https://connect.facebook.net">
 
 
   <!-- Main Menu -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
-    integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
-
-
-
-
-
-
-
 
 
   <!-- Animate On Screen -->
@@ -161,9 +151,9 @@
 
   <!-- Navigation -->
 
-  <nav class="sticky top-0 z-20 flex flex-wrap items-center p-3 shadow-2xl nav-rush-gradient ">
+  <!-- <nav class="sticky top-0 z-20 flex flex-wrap items-center p-3 shadow-2xl nav-rush-gradient ">
     <a href="/index.html" class="inline-flex items-center p-2 mr-4">
-      <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
+      <img class="" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
     </a>
     <button class="inline-flex p-2 ml-auto rounded outline-none hover:bg-gray-900 lg:hidden nav-toggler"
       data-target="#navigation">
@@ -203,26 +193,55 @@
         </a>
       </div>
     </div>
+  </nav> -->
+
+
+  <nav class="sticky top-0 z-20 shadow-2xl nav-rush-gradient">
+    <div class="container flex items-center justify-between px-6 py-2 mx-auto">
+      <a href="/index.html" class="inline-flex items-center p-2 mr-4">
+        <img class="" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
+      </a>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 px-4 py-2 font-bold text-gray-500 text-yellow-300 border border-gray-600 rounded appearance-none text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300 hover:border-teal-500 focus:outline-none">
+          <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:block">
+        <ul class="inline-flex">
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300"
+              href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300" href="/rush.html">Rush</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300" href="/accelerator.html">Accelerator</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300" href="/connect.html">Connect</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300" href="/capital.html">Capital</a>
+          </li>
+          <li>
+            <a class="px-4 py-2 font-bold text-yellow-300 rounded text-inter-base hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300" href="#contactus">Contact</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $(".nav-toggler").each(function (_, navToggler) {
-        var target = $(navToggler).data("target");
-        $(navToggler).on("click", function () {
-          $(target).animate({
-            height: "toggle"
-          });
-        });
-      });
-    });
-  </script>
   <!-- /End of Navigation -->
 
   <!-- Hero -->
-  <header id="rush-hero" class="relative py-8 header lg:overflow-hidden video-overlay ">
+  <header id="rush-hero" class="relative py-8 header lg:overflow-hidden video-overlay">
     <div class="absolute inset-0 z-negative ">
       <video preload="metadata" autoplay muted loop class="object-cover w-full h-full ">
         <source src="https://freightleads.netlify.com/assets/vid/freightleads-rush.webm" type="video/webm; ">
@@ -768,9 +787,9 @@
 
             <div class="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                <p class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
                   Solutions
-                </h4>
+                </p>
                 <ul class="mt-4">
                   <li>
                     <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
@@ -795,9 +814,9 @@
                 </ul>
               </div>
               <div class="mt-12 md:mt-0">
-                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                <p class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
                   Support
-                </h4>
+                </p>
                 <ul class="mt-4">
                   <li>
                     <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
@@ -824,9 +843,9 @@
             </div>
             <div class="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                <p class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
                   Company
-                </h4>
+                </p>
                 <ul class="mt-4">
                   <li>
                     <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
@@ -856,9 +875,9 @@
                 </ul>
               </div>
               <div class="mt-12 md:mt-0">
-                <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+                <p class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
                   Legal
-                </h4>
+                  </h4>
                 <ul class="mt-4">
                   <li>
                     <a href="#" class="leading-6 text-gray-900 text-inter-base hover:text-blue">
@@ -880,9 +899,9 @@
             </div>
           </div>
           <div class="mt-8 xl:mt-0">
-            <h4 class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
+            <p class="font-bold leading-5 tracking-wider text-gray-800 uppercase text-inter-sm">
               Subscribe to our newsletter
-            </h4>
+            </p>
             <div class="flex mt-4">
               <a href="#" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Facebook</span>
