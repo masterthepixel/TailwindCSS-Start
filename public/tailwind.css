@@ -43,6 +43,67 @@
  */
 @tailwind screens;
 
+
+
+.video-section {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.video-footer-section {
+	position: relative;
+	height: 30vh;
+	overflow: hidden;
+}
+
+.video-object {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#herotext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	text-shadow: 0 0 1em rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.rush-header{
+    background-image: linear-gradient(rgba(0, 0, 28, 0.5), #faca15),
+    url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+}
+
+.truck-stats{
+    background-image: linear-gradient(rgba(0, 0, 28, 0.5), rgba(69, 69, 69, 0.824)),
+    url("https://images.unsplash.com/photo-1541969487406-1f1adf3884ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80");
+}
+.rail-stats{
+    background-image: linear-gradient(rgba(0, 0, 28, 0.5), rgba(69, 69, 69, 0.824)),
+    url("https://images.unsplash.com/flagged/photo-1550719723-8602e87f2dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80");
+}
+.water-stats{
+    background-image: linear-gradient(rgba(0, 0, 28, 0.5), rgba(69, 69, 69, 0.824)),
+    url("https://images.unsplash.com/photo-1577874103803-bf6a831511e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80");
+}
+.air-stats{
+    background-image: linear-gradient(rgba(0, 0, 28, 0.5), rgba(69, 69, 69, 0.824)),
+    url("https://images.unsplash.com/photo-1504723246034-0977641ea907?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80");
+}
+
+
+
+
+
 .shadow-3xl {
   box-shadow: 0 35px 60px -15px rgba(0, 0, 0, .3);
 }
