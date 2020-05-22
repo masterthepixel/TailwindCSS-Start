@@ -353,11 +353,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 
 }
 
+.yellow-stripes {
+  /* https://www.heropatterns.com/ */
+  background-color:  #faca15;
+  ;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 
 .accelerator-stripes {
   /* https://www.heropatterns.com/ */
-  background-color: #052F5F;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e1b613' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #052f5f;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231e446f' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .accelerator-diamonds {
@@ -368,7 +375,7 @@ background-size: cover;
 }
 
 .bg-accelerator-card {
-  background: linear-gradient(177deg, #052f5f, #042143);
+  background: linear-gradient(177deg, #052f5f, #1e446f);
   background-size: 400% 400%;
   opacity: 0.9;
 
