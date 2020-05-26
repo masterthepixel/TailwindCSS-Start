@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>FREIGHTLEADS - Freight sourcing for transportation professionals.</title>
+  <title>masterthepixel - all ideas start with a pixel.</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="FREIGHTLEADS">
-  <meta property="og:url" content="https://freight-leads.com/">
-  <meta property="og:site_name" content="FREIGHTLEADS">
+  <meta name="author" content="master the pixel ">
+  <meta property="og:url" content="https://masterthepixel.com/">
+  <meta property="og:site_name" content="master the pixel ">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FREIGHTLEADS - Freight sourcing for transportation professionals.">
+  <meta property="og:title" content="master the pixel  - Freight sourcing for transportation professionals.">
   <meta property="og:description"
-    content="Freight leads &amp; sales training for transportation professionals. Flood your inbox with rate requests. Book more loads. Be more profitable.">
+    content="masterthepixel &amp; sales training for transportation professionals. Flood your inbox with rate requests. Book more loads. Be more profitable.">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,170 +20,1359 @@
 
 
   <link rel="stylesheet" href="/build/tailwind.css">
+
+
+  <!-- Link Swiper's CSS Swiperjs.com/get-started/ -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
   <!-- Animate On Screen -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
+
   <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      }; if (!f._fbq) f._fbq = n;
-      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
-    }(window,
-      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '422152588165925', {
-      em: 'insert_email_variable'
-    });
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=422152588165925&ev=PageView&noscript=1" /></noscript>
+
   <!-- DO NOT MODIFY -->
   <!-- End Facebook Pixel Code -->
 
 
   <!-- Hotjar Tracking Code for https://freight-leads.com/ -->
   <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 1445329, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
 
 </head>
 
-<body class="antialiased " style="background-color: #340382;">
+<body class="antialiased debug-screens " style="background-color: #010203;">
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v4.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat" attribution=setup_tool page_id="257218737765439" theme_color="#2c0c44"
-    logged_in_greeting="Hey! Want some freight to move?" logged_out_greeting="Hey! Want some freight to move?">
   </div>
 
 
 
 
 
-  <!-- Header Banner --->
 
 
 
+  <!-- Header Area + Navigation -->
 
-  <!-- \Header Banner -->
-
-
-  <!-- Navigation -->
-
-  <nav class="sticky top-0 z-20 flex flex-wrap items-center p-3 shadow-2xl nav-rush-gradient">
-    <a href="#" class="inline-flex items-center p-2 mr-4">
-      <img class="w-auto" src="./assets/png/2020_Logo.png" alt="Freight Leads" />
-    </a>
-    <button class="inline-flex p-3 ml-auto rounded outline-none hover:bg-gray-900 lg:hidden nav-toggler"
-      data-target="#navigation">
-      <span
-        class="font-semibold tracking-widest text-white text-inter-xs sm:text-inter-lg hover:text-yellow-300 ">MENU</span>
-    </button>
-    <div class="hidden w-full top-navbar lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
-      <div
-        class="flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
-        <a href="index.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Home</span>
-        </a>
-        <a href="rush.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Rush</span>
-        </a>
-        <a href="accelerator.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Accelerator</span>
-        </a>
-        <a href="connect.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Connect</span>
-        </a>
-        <a href="capital.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Capital</span>
-        </a>
-        <a href="associates.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Associates</span>
-        </a>
-        <a href="contact.html"
-          class="items-center justify-center w-full px-3 py-2 font-bold text-yellow-300 rounded text-inter-base lg:inline-flex lg:w-auto hover:bg-gray-900 hover:text-yellow-400 hover:font-semi-bold hover:underline hover:border-b-2 hover:border-yellow-300">
-          <span>Contact Us</span>
-        </a>
+  <div class="relative overflow-hidden ">
+    <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
+      <div class="relative h-full max-w-screen-xl mx-auto">
+        <svg class="absolute transform right-full translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404"
+          height="784" fill="none" viewBox="0 0 404 784">
+          <defs>
+            <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+        </svg>
+        <svg
+          class="absolute transform left-full -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
+          width="404" height="784" fill="none" viewBox="0 0 404 784">
+          <defs>
+            <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+        </svg>
       </div>
     </div>
-  </nav>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $(".nav-toggler").each(function (_, navToggler) {
-        var target = $(navToggler).data("target");
-        $(navToggler).on("click", function () {
-          $(target).animate({
-            height: "toggle"
-          });
-        });
-      });
-    });
-  </script>
-  <!-- /End of Navigation -->
-
-
-  <!-- <source src="https://freightleads.netlify.com/assets/vid/lion-ghost.mp4" type="video/mp4" /> -->
-
-
-
-
-  <!-- <main>
-    <section
-      class="flex flex-col items-center justify-center min-h-screen bg-bottom bg-no-repeat bg-cover section--hero">
-      <div class="container px-4 text-center">
-        <h1 data-aos="fade-down" data-aos-duration="1000"
-          class="font-black leading-none tracking-tight text-yellow-300 text-inter-4xl sm:leading-none">be the
-          leader of the freight jungle
-        </h1>
+    <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+      <div class="max-w-screen-xl px-4 mx-auto sm:px-6">
+        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+          <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+              <a href="#">
+                <img class="w-auto h-8 sm:h-10" src="/img/logos/workflow-mark-on-white.svg" alt="" />
+              </a>
+              <div class="flex items-center -mr-2 md:hidden">
+                <button type="button"
+                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
+                  <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <a href="#"
+              class="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Product</a>
+            <a href="#"
+              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Features</a>
+            <a href="#"
+              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Marketplace</a>
+            <a href="#"
+              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Company</a>
+          </div>
+          <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+            <span class="inline-flex rounded-md shadow">
+              <a href="#"
+                class="inline-flex items-center px-4 py-2 font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700">
+                Log in
+              </a>
+            </span>
+          </div>
+        </nav>
       </div>
-    </section>
-  </main> -->
 
-  <section class="shadow-2xl video-section">
+      <!--
+        Mobile menu, show/hide based on menu open state.
+  
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+        <div class="rounded-lg shadow-md">
+          <div class="overflow-hidden bg-white rounded-lg shadow-xs">
+            <div class="flex items-center justify-between px-5 pt-4">
+              <div>
+                <img class="w-auto h-8" src="/img/logos/workflow-mark-on-white.svg" alt="" />
+              </div>
+              <div class="-mr-2">
+                <button type="button"
+                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
+                  <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 pt-2 pb-3">
+              <a href="#"
+                class="block px-3 py-2 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Product</a>
+              <a href="#"
+                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Features</a>
+              <a href="#"
+                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Marketplace</a>
+              <a href="#"
+                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Company</a>
+            </div>
+            <div>
+              <a href="#"
+                class="block w-full px-5 py-3 font-medium text-center text-indigo-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+        <div class="text-center">
+          <h2
+            class="font-extrabold leading-10 tracking-tight text-white text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-6xl">
+            Data to enrich your
+            <br class="xl:hidden" />
+            <span class="text-yellow-500">online business</span>
+          </h2>
+          <p
+            class="max-w-md mx-auto mt-3 text-gray-100 text-inter-base sm:text-lg md:mt-5 md:text-inter-xl md:max-w-3xl">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+            fugiat veniam occaecat fugiat aliqua.
+          </p>
+          <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+            <div class="rounded-md shadow">
+              <a href="#"
+                class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
+                Get started
+              </a>
+            </div>
+            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a href="#"
+                class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
+                Live demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 3 Images -->
+  <div class="relative px-4 pt-16 pb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="absolute inset-0">
+      <div class=" h-1/3 sm:h-2/3"></div>
+    </div>
+    <div class="relative mx-auto ... ">
+      <div class="text-center">
+        <h2
+          class="font-extrabold leading-10 tracking-tight text-white text-inter-3xl sm:text-inter-4xl sm:leading-none md:text-inter-5xl">
+          Recent Projects:
+        </h2>
+      </div>
+      <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Blog
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                  atque fuga culpa, similique sequi cum eos quis dolorum.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Roel Aufderhar
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline">
+                  Video
+                </a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  How to use search engine optimization to drive sales
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat
+                  doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo
+                  laudantium.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Brenna Goyette
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="object-cover w-full h-48"
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="" />
+          </div>
+          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+            <div class="flex-1">
+              <p class="font-medium leading-5 text-indigo-600 text-inter-sm">
+                <a href="#" class="hover:underline"> Case Study</a>
+              </p>
+              <a href="#" class="block">
+                <h3 class="mt-2 font-semibold leading-7 text-gray-900 text-inter-xl">
+                  Improve your customer experience
+                </h3>
+                <p class="mt-3 leading-6 text-gray-500 text-inter-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                  magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+                </p>
+              </a>
+            </div>
+            <div class="flex items-center mt-6">
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <img class="w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </a>
+              </div>
+              <div class="ml-3">
+                <p class="font-medium leading-5 text-gray-900 text-inter-sm">
+                  <a href="#" class="hover:underline">
+                    Daniela Metz
+                  </a>
+                </p>
+                <div class="flex leading-5 text-gray-500 text-inter-sm">
+                  <time datetime="2020-03-16">
+                    Mar 16, 2020
+                  </time>
+                  <span class="mx-1">
+                    &middot;
+                  </span>
+                  <span>
+                    6 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /End of 3 Images -->
+
+
+  <!-- /End of Header Area + Navigation -->
+
+  <!-- Clients Area -->
+  <div class="">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
+      <p class="font-semibold leading-6 tracking-wider text-center text-yellow-500 uppercase text-inter-base">
+        Clients
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="Workcation" />
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="Mirage" />
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="Tuple" />
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="Laravel" />
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="StaticKit" />
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 ">
+          <img class="max-h-12"
+            src="https://www.audiusa.com/content/dam/audiusa/Models/e-tron-2019/ModelPage/etron-logo-hi-res.png"
+            alt="Statamic" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- /End of Clients Area -->
+
+
+
+  <!--- About Us  Area -->
+  <div class="py-16 overflow-hidden lg:py-24">
+    <div class="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-xl">
+      <svg class="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4" width="404"
+        height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+      </svg>
+
+      <div class="relative">
+        <h3
+          class="font-extrabold leading-8 tracking-tight text-center text-yellow-500 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+          A better way to send money
+        </h3>
+        <p class="max-w-3xl mx-auto mt-4 leading-7 text-center text-gray-100 text-inter-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in,
+          accusamus quisquam.
+        </p>
+      </div>
+
+      <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div class="relative">
+          <h4 class="font-extrabold leading-8 tracking-tight text-white text-inter-2xl sm:text-inter-3xl sm:leading-9">
+            Transfer funds world-wide
+          </h4>
+          <p class="mt-3 text-lg leading-7 text-gray-100">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
+            officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
+            Totam, velit.
+          </p>
+
+          <ul class="mt-10">
+            <li>
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                    <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h5 class="mt-3 text-lg leading-7 text-gray-50">Competitive exchange rates</h5>
+                  <p class="mt-2 leading-6 text-gray-100 text-inter-base">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit
+                    eaque, iste dolor cupiditate blanditiis ratione.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="mt-10">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                    <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h5 class="mt-3 text-lg leading-7 text-gray-50">No hidden fees</h5>
+                  <p class="mt-2 leading-6 text-gray-100 text-inter-base">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit
+                    eaque, iste dolor cupiditate blanditiis ratione.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="mt-10">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                    <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h5 class="mt-3 text-lg leading-7 text-gray-50">Transfers are instant</h5>
+                  <p class="mt-2 leading-6 text-gray-100 text-inter-base">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit
+                    eaque, iste dolor cupiditate blanditiis ratione.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative mt-10 -mx-4 lg:mt-0">
+          <svg class="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden" width="784" height="404"
+            fill="none" viewBox="0 0 784 404">
+            <defs>
+              <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+          </svg>
+          <img class="relative mx-auto" width="490" src="/img/features/feature-example-1.png" alt="" />
+        </div>
+      </div>
+
+      <svg class="absolute hidden transform translate-x-1/2 translate-y-12 lg:block right-full" width="404" height="784"
+        fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+      </svg>
+
+      <div class="relative mt-12 sm:mt-16 lg:mt-24">
+        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <div class="lg:col-start-2">
+            <h4
+              class="font-extrabold leading-8 tracking-tight text-white text-inter-2xl sm:text-inter-3xl sm:leading-9">
+              Always in the loop
+            </h4>
+            <p class="mt-3 text-lg leading-7 text-gray-100">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum
+              deleniti sunt in labore nihil quod quibusdam expedita nemo.
+            </p>
+
+            <ul class="mt-10">
+              <li>
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                      <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h5 class="mt-3 text-lg leading-7 text-gray-50">Mobile notifications</h5>
+                    <p class="mt-2 leading-6 text-gray-100 text-inter-base">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit
+                      eaque, iste dolor cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="mt-10">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                      <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h5 class="mt-3 text-lg leading-7 text-gray-50">Reminder emails</h5>
+                    <p class="mt-2 leading-6 text-gray-100 text-inter-base">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit
+                      eaque, iste dolor cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
+            <svg class="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden" width="784" height="404"
+              fill="none" viewBox="0 0 784 404">
+              <defs>
+                <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20"
+                  patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+            </svg>
+            <img class="relative mx-auto" width="490" src="/img/features/feature-example-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- /End of About Us  Area -->
+
+
+  <!---  Project + Client Portfolio Area -->
+
+  <div class="px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+    <div class="">
+      <h2
+        class="font-extrabold leading-none tracking-tight text-yellow-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
+        More Projects
+
+        <span class="text-gray-100">+ Designs</span>
+      </h2>
+      <p class="max-w-md mt-3 text-gray-100 text-inter-base sm:text-lg md:mt-5 md:text-inter-xl md:max-w-3xl">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+        veniam occaecat fugiat aliqua.
+      </p>
+    </div>
+  </div>
+
+  <!-- Slides -->
+
+  <!--- ### Project + Client Portfolio Slides ### -->
+
+  <!-- Andrew Bird Project -->
+  <!-- Freight Leads Project -->
+  <!-- JIBPM  Project -->
+  <!-- Jiant Renovations Project -->
+  <!-- Sir Wax A Lot Project -->
+  <!-- Non Profit Assocation Project -->
+
+  <!--- /End of ### Project + Client Portfolio Slides ### -->
+
+  <!-- Project + Client Portfolio Slider main container -->
+  <section class="px-4 mt-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-12 xl:mt-16 ">
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col items-start justify-center w-full py-8 lg:w-1/2">
+              <label for="tagline" class="text-yellow-500 uppercase tracking-loose">best app ever</label>
+              <h1 class="my-4 font-normal text-yellow-500">Our Work Flow</h1>
+              <p class="mb-4 leading-5 text-yellow-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ex ea commodo consequat.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium natus error sit.</p>
+              <button
+                class="px-4 py-2 font-semibold text-black bg-transparent border border-black hover:bg-black hover:text-white hover:border-transparent">Learn
+                More</button>
+            </div>
+            <div class="w-full lg:w-1/2 lg:py-6"><img src="https://stitches.hyperyolo.com/images/demo-devices.png"
+                alt="image" class="w-full"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col items-start justify-center w-full py-8 lg:w-1/2">
+              <label for="tagline" class="text-yellow-500 uppercase tracking-loose">best app ever</label>
+              <h1 class="my-4 font-normal text-yellow-500">Our Work Flow</h1>
+              <p class="mb-4 leading-5 text-yellow-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ex ea commodo consequat.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium natus error sit.</p>
+              <button
+                class="px-4 py-2 font-semibold text-black bg-transparent border border-black hover:bg-black hover:text-white hover:border-transparent">Learn
+                More</button>
+            </div>
+            <div class="w-full lg:w-1/2 lg:py-6"><img src="https://stitches.hyperyolo.com/images/demo-devices.png"
+                alt="image" class="w-full"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.portfolio-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+  </section>
+  <!--- /End of  Project + Client Portfolio Area -->
+
+
+
+
+
+  <!---   Services Card Area  -->
+
+
+
+
+  <div class="px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+    <div class="">
+      <h2
+        class="font-extrabold leading-none tracking-tight text-yellow-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
+        Technology services<br class="xl:visible" />
+        <span class="text-green-500">grow your business</span>
+      </h2>
+      <p class="max-w-md mt-3 text-gray-100 text-inter-base sm:text-inter-lg md:mt-5 md:text-inter-xl md:max-w-3xl">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+        veniam occaecat fugiat aliqua.
+      </p>
+    </div>
+  </div>
+
+  <!-- Designing your digital product -->
+  <!-- Desiging a Shopify store -->
+  <!-- Building a custom responsive site -->
+  <!-- Giving a boost to your brand -->
+  <!-- Designing a native mobile app -->
+
+  <section class="px-4 mx-auto mt-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-12 xl:mt-16 ">
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-lg ... max-w-sm md:max-w-md helpcard-gradient border-2 border-yellow-500 hover:border-yellow-600 hover:shadow-2xl">
+            <div class="relative z-10 helpcard-filter">
+              <img class="w-full "
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                alt="Profile image" />
+            </div>
+            <div class="relative z-50 flex flex-row items-center justify-between px-6 -mt-10 ">
+              <p class="flex items-center pr-2 font-bold leading-none text-white text-inter-3xl text-shadow-drop-br">
+                Launching your startup business</p>
+              <button
+                class="p-4 transition duration-200 ease-in bg-gray-600 rounded-full hover:bg-gray-500 focus:bg-gray-700 focus:outline-none">
+                <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6">
+                  <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                        C15.952,9,16,9.447,16,10z" />
+                </svg>
+              </button>
+            </div>
+            <div class="px-6 pt-3 pb-8 ">
+              <p class="font-medium leading-5 text-white text-inter-lg">From product design to strategy, design systems,
+                UX
+                or UI. We solve complex problems thru design, so you can achieve your business goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-lg ... max-w-sm md:max-w-md helpcard-gradient border-2 border-yellow-500 hover:border-yellow-600 hover:shadow-2xl">
+            <div class="relative z-10 helpcard-filter">
+              <img class="w-full "
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                alt="Profile image" />
+            </div>
+            <div class="relative z-50 flex flex-row items-center justify-between px-6 -mt-10 ">
+              <p class="flex items-center pr-2 font-bold leading-none text-white text-inter-3xl text-shadow-drop-br">
+                Desiging a Shopify store</p>
+              <button
+                class="p-4 transition duration-200 ease-in bg-gray-600 rounded-full hover:bg-gray-500 focus:bg-gray-700 focus:outline-none">
+                <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6">
+                  <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                        C15.952,9,16,9.447,16,10z" />
+                </svg>
+              </button>
+            </div>
+            <div class="px-6 pt-3 pb-8 ">
+              <p class="font-medium leading-5 text-white text-inter-lg">From product design to strategy, design systems,
+                UX
+                or UI. We solve complex problems thru design, so you can achieve your business goals.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-lg ... max-w-sm md:max-w-md helpcard-gradient border-2 border-yellow-500 hover:border-yellow-600 hover:shadow-2xl">
+            <div class="relative z-10 helpcard-filter">
+              <img class="w-full "
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                alt="Profile image" />
+            </div>
+            <div class="relative z-50 flex flex-row items-center justify-between px-6 -mt-10 ">
+              <p class="flex items-center pr-2 font-bold leading-none text-white text-inter-3xl text-shadow-drop-br">
+                Building a custom responsive site</p>
+              <button
+                class="p-4 transition duration-200 ease-in bg-gray-600 rounded-full hover:bg-gray-500 focus:bg-gray-700 focus:outline-none">
+                <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6">
+                  <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                        C15.952,9,16,9.447,16,10z" />
+                </svg>
+              </button>
+            </div>
+            <div class="px-6 pt-3 pb-8 ">
+              <p class="font-medium leading-5 text-white text-inter-lg">From product design to strategy, design systems,
+                UX
+                or UI. We solve complex problems thru design, so you can achieve your business goals.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-lg ... max-w-sm md:max-w-md helpcard-gradient border-2 border-yellow-500 hover:border-yellow-600 hover:shadow-2xl">
+            <div class="relative z-10 helpcard-filter">
+              <img class="w-full "
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                alt="Profile image" />
+            </div>
+            <div class="relative z-50 flex flex-row items-center justify-between px-6 -mt-10 ">
+              <p class="flex items-center pr-2 font-bold leading-none text-white text-inter-3xl text-shadow-drop-br">
+                Giving a boost to your brand </p>
+              <button
+                class="p-4 transition duration-200 ease-in bg-gray-600 rounded-full hover:bg-gray-500 focus:bg-gray-700 focus:outline-none">
+                <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6">
+                  <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                        C15.952,9,16,9.447,16,10z" />
+                </svg>
+              </button>
+            </div>
+            <div class="px-6 pt-3 pb-8 ">
+              <p class="font-medium leading-5 text-white text-inter-lg">From product design to strategy, design systems,
+                UX
+                or UI. We solve complex problems thru design, so you can achieve your business goals.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-lg ... max-w-sm md:max-w-md helpcard-gradient border-2 border-yellow-500 hover:border-yellow-600 hover:shadow-2xl">
+            <div class="relative z-10 helpcard-filter">
+              <img class="w-full "
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                alt="Profile image" />
+            </div>
+            <div class="relative z-50 flex flex-row items-center justify-between px-6 -mt-10 ">
+              <p class="flex items-center pr-2 font-bold leading-none text-white text-inter-3xl text-shadow-drop-br">
+                Designing a native mobile app</p>
+              <button
+                class="p-4 transition duration-200 ease-in bg-gray-600 rounded-full hover:bg-gray-500 focus:bg-gray-700 focus:outline-none">
+                <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6">
+                  <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                        C15.952,9,16,9.447,16,10z" />
+                </svg>
+              </button>
+            </div>
+            <div class="px-6 pt-3 pb-8 ">
+              <p class="font-medium leading-5 text-white text-inter-lg">From product design to strategy, design systems,
+                UX
+                or UI. We solve complex problems thru design, so you can achieve your business goals.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+
+        </div>
+        <div class="swiper-slide">
+
+        </div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        // init: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }
+      });
+    </script>
+
+  </section>
+
+  <!--- /Services Card Area  -->
+
+
+
+
+  <!--- A few things clients normally ask me -->
+
+  <div class="">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-extrabold leading-9 text-center text-gray-900 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+          Frequently asked questions
+        </h2>
+        <div class="pt-6 mt-6 border-t-2 border-gray-200">
+          <dl>
+            <div>
+              <dt class="text-lg leading-7">
+                <!-- Expand/collapse question button -->
+                <button
+                  class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                  <span class="font-medium text-gray-900">
+                    What's the best thing about Switzerland?
+                  </span>
+                  <span class="flex items-center ml-6 h-7">
+                    <!--
+                      Expand/collapse icon, toggle classes based on question open state.
+  
+                      Open: "-rotate-180", Closed: "rotate-0"
+                    -->
+                    <svg class="w-6 h-6 transform -rotate-180" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </button>
+              </dt>
+              <dd class="pr-12 mt-2">
+                <p class="leading-6 text-gray-500 text-inter-base">
+                  I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas cupiditate laboriosam fugiat.
+                </p>
+              </dd>
+            </div>
+            <div class="pt-6 mt-6 border-t border-gray-200">
+              <div>
+                <dt class="text-lg leading-7">
+                  <!-- Expand/collapse question button -->
+                  <button
+                    class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                    <span class="font-medium text-gray-900">
+                      How do you make holy water?
+                    </span>
+                    <span class="flex items-center ml-6 h-7">
+                      <!--
+                        Expand/collapse icon, toggle classes based on question open state.
+  
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class="w-6 h-6 transform rotate-0" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="pr-12 mt-2">
+                  <p class="leading-6 text-gray-500 text-inter-base">
+                    You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut
+                    tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita
+                    natus.
+                  </p>
+                </dd>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-gray-200">
+              <div>
+                <dt class="text-lg leading-7">
+                  <!-- Expand/collapse question button -->
+                  <button
+                    class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                    <span class="font-medium text-gray-900">
+                      What do you call someone with no body and no nose?
+                    </span>
+                    <span class="flex items-center ml-6 h-7">
+                      <!--
+                        Expand/collapse icon, toggle classes based on question open state.
+  
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class="w-6 h-6 transform rotate-0" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="pr-12 mt-2">
+                  <p class="leading-6 text-gray-500 text-inter-base">
+                    Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia
+                    excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.
+                  </p>
+                </dd>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-gray-200">
+              <div>
+                <dt class="text-lg leading-7">
+                  <!-- Expand/collapse question button -->
+                  <button
+                    class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                    <span class="font-medium text-gray-900">
+                      Why do you never see elephants hiding in trees?
+                    </span>
+                    <span class="flex items-center ml-6 h-7">
+                      <!--
+                        Expand/collapse icon, toggle classes based on question open state.
+  
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class="w-6 h-6 transform rotate-0" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="pr-12 mt-2">
+                  <p class="leading-6 text-gray-500 text-inter-base">
+                    Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    cupiditate laboriosam fugiat.
+                  </p>
+                </dd>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-gray-200">
+              <div>
+                <dt class="text-lg leading-7">
+                  <!-- Expand/collapse question button -->
+                  <button
+                    class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                    <span class="font-medium text-gray-900">
+                      Why can't you hear a pterodactyl go to the bathroom?
+                    </span>
+                    <span class="flex items-center ml-6 h-7">
+                      <!--
+                        Expand/collapse icon, toggle classes based on question open state.
+  
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class="w-6 h-6 transform rotate-0" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="pr-12 mt-2">
+                  <p class="leading-6 text-gray-500 text-inter-base">
+                    Because the pee is silent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quas
+                    voluptatibus ex culpa ipsum, aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum natus
+                    facilis atque vero consequatur! Quisquam, debitis error.
+                  </p>
+                </dd>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-gray-200">
+              <div>
+                <dt class="text-lg leading-7">
+                  <!-- Expand/collapse question button -->
+                  <button
+                    class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-gray-900">
+                    <span class="font-medium text-gray-900">
+                      Why did the invisible man turn down the job offer?
+                    </span>
+                    <span class="flex items-center ml-6 h-7">
+                      <!--
+                        Expand/collapse icon, toggle classes based on question open state.
+  
+                        Open: "-rotate-180", Closed: "rotate-0"
+                      -->
+                      <svg class="w-6 h-6 transform rotate-0" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="pr-12 mt-2">
+                  <p class="leading-6 text-gray-500 text-inter-base">
+                    He couldn't see himself doing it. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+                    perspiciatis officiis corrupti tenetur. Temporibus ut voluptatibus, perferendis sed unde rerum
+                    deserunt eius.
+                  </p>
+                </dd>
+              </div>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- /End of A few things clients normally ask me -->
+
+
+  <!--- Contact Us -->
+  <div class="px-4 py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+    <div class="relative max-w-xl mx-auto">
+      <svg class="absolute transform translate-x-1/2 left-full" width="404" height="404" fill="none"
+        viewBox="0 0 404 404">
+        <defs>
+          <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+      </svg>
+      <svg class="absolute bottom-0 transform -translate-x-1/2 right-full" width="404" height="404" fill="none"
+        viewBox="0 0 404 404">
+        <defs>
+          <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+      </svg>
+      <div class="text-center">
+        <h2
+          class="font-extrabold leading-9 tracking-tight text-gray-900 text-inter-3xl sm:text-inter-4xl sm:leading-10">
+          Contact sales
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-gray-500">
+          Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
+          arcu.
+        </p>
+      </div>
+      <div class="mt-12">
+        <form action="#" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+          <div>
+            <label for="first_name" class="block font-medium leading-5 text-gray-700 text-inter-sm">First name</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <input id="first_name" class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
+            </div>
+          </div>
+          <div>
+            <label for="last_name" class="block font-medium leading-5 text-gray-700 text-inter-sm">Last name</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <input id="last_name" class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="company" class="block font-medium leading-5 text-gray-700 text-inter-sm">Company</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <input id="company" class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block font-medium leading-5 text-gray-700 text-inter-sm">Email</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <input id="email" type="email"
+                class="block w-full px-4 py-3 transition duration-150 ease-in-out form-input" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="phone_number" class="block font-medium leading-5 text-gray-700 text-inter-sm">Phone
+              Number</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <div class="absolute inset-y-0 left-0 flex items-center">
+                <select aria-label="Country"
+                  class="h-full py-0 pl-4 pr-8 text-gray-500 transition duration-150 ease-in-out bg-transparent border-transparent form-select">
+                  <option>US</option>
+                  <option>CA</option>
+                  <option>EU</option>
+                </select>
+              </div>
+              <input id="phone_number"
+                class="block w-full px-4 py-3 pl-20 transition duration-150 ease-in-out form-input"
+                placeholder="+1 (555) 987-6543" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block font-medium leading-5 text-gray-700 text-inter-sm">Message</label>
+            <div class="relative mt-1 rounded-md shadow-sm">
+              <textarea id="message" rows="4"
+                class="block w-full px-4 py-3 transition duration-150 ease-in-out form-textarea"></textarea>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <!--
+                  Simple toggle
+  
+                  On: "bg-indigo-600", Off: "bg-gray-200"
+                -->
+                <span role="checkbox" tabindex="0" aria-checked="false"
+                  class="relative flex-shrink-0 inline-block h-6 transition-colors duration-200 ease-in-out bg-gray-200 border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:shadow-outline">
+                  <!-- On: "translate-x-5", Off: "translate-x-0" -->
+                  <span aria-hidden="true"
+                    class="inline-block w-5 h-5 transition duration-200 ease-in-out transform translate-x-0 bg-white rounded-full shadow"></span>
+                </span>
+              </div>
+              <div class="ml-3">
+                <p class="leading-6 text-gray-500 text-inter-base">
+                  By selecting this, you agree to the
+                  <a href="#" class="font-medium text-gray-700 underline">Privacy Policy</a>
+                  and
+                  <a href="#" class="font-medium text-gray-700 underline">Cookie Policy</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <span class="inline-flex w-full rounded-md shadow-sm">
+              <button type="button"
+                class="inline-flex items-center justify-center w-full px-6 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+                Let's talk
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--- /End of Contact Us -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Video Hero Sectio n-->
+  <!-- <section class="shadow-2xl video-section">
     <div class="video">
       <video class="video-object" width="1920" height="1280" autoplay muted loop>
         <source src="https://freightleads.netlify.com/assets/vid/lion-ghost.mp4" type="video/mp4" />
@@ -198,35 +1387,13 @@
         <span class="text-yellow-300">freight jungle</span>
       </h1>
     </div>
-  </section>
-
-
-
-
-
-
-
-
-
-  <!-- Hero Section-->
-
-
-
-  <!-- Parallax Hero Spacer Area 
-    <div id="hero" class="h-screen bg-fixed bg-center bg-no-repeat bg-cover w-100">
-
-  </div>
- -->
-
-
-
-
-  <!-- /End of Hero Section-->
+  </section> -->
+  <!-- /End of Video Hero Section-->
 
 
   <!--  National Register Information -->
 
-  <div class="py-16 overflow-hidden lg:py-24" style="background-color: #340382;">
+  <!-- <div class="py-16 overflow-hidden lg:py-24" style="background-color: #340382;">
     <div class="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-xl">
       <svg class="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4" width="404"
         height="784" fill="none" viewBox="0 0 404 784">
@@ -249,7 +1416,8 @@
           </h4>
           <p data-aos="fade-up" data-aos-duration="600" class="mt-3 leading-7 text-white text-inter-lg">
             The National Register of FTL & LTL Shippers, 2020 Edition® is a verified listing of thoroughly-vetted,
-            quality freight sales leads compiled as a sales generation resource for individuals and companies engaged in
+            quality freight sales leads compiled as a sales generation resource for individuals and companies
+            engaged in
             the freight shipping business.
           </p>
 
@@ -268,7 +1436,8 @@
                   <h5 class="font-medium leading-normal text-white text-inter-lg">Competitive Advantage
                   </h5>
                   <p class="mt-2 leading-6 text-white text-inter-base">
-                    This database of truckload and less-than-truckload shippers is an all-in-one opportunity for all
+                    This database of truckload and less-than-truckload shippers is an all-in-one opportunity for
+                    all
                     types of sales professionals and transportation companies.
                   </p>
                 </div>
@@ -287,8 +1456,10 @@
                 <div class="ml-4">
                   <h5 class="font-medium leading-normal text-white text-inter-lg">Quality Leads</h5>
                   <p class="mt-2 leading-6 text-white text-inter-base">
-                    The small to medium-sized businesses listed in this freight directory have been carefully selected
-                    and qualified to enable even the most inexperienced sales people to achieve success effortlessly.
+                    The small to medium-sized businesses listed in this freight directory have been carefully
+                    selected
+                    and qualified to enable even the most inexperienced sales people to achieve success
+                    effortlessly.
                   </p>
                 </div>
               </div>
@@ -349,14 +1520,14 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- /End of National Register -->
 
 
 
   <!-- Frequently Asked Questions -->
-  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="" x-data="{ openPanel: 1 }"
+  <!-- <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="" x-data="{ openPanel: 1 }"
     style="background-color: #340382;">
     <div class="max-w-screen-xl px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto">
@@ -386,7 +1557,8 @@
               <dd class="pr-12 mt-2" x-show="openPanel === 1">
                 <p class="leading-6 text-white text-inter-base">
                   Inside the register you will find a comprehensive listing of over 3,000 qualified and
-                  thoroughly-vetted full truckload shippers and less-than-truckload shippers. The company listings are
+                  thoroughly-vetted full truckload shippers and less-than-truckload shippers. The company listings
+                  are
                   grouped by State. Each listing includes company name, address, phone number,
                   key contact name and title, and a description of the commodities shipped.
                 </p>
@@ -413,13 +1585,17 @@
                 </dt>
                 <dd class="pr-12 mt-2" x-show="openPanel === 2">
                   <p class="leading-6 text-white text-inter-base">
-                    Unlike the phone book or other publications, every single one of the freight shippers listed in
+                    Unlike the phone book or other publications, every single one of the freight shippers listed
+                    in
                     this
-                    register has been qualified as either shipping FTL and/or LTL freight loads on a regular basis.
+                    register has been qualified as either shipping FTL and/or LTL freight loads on a regular
+                    basis.
 
                     We have done the cold calling for you to qualify them as either a truckload shipper or
-                    less-than-truckload shipper, or in many cases, as both. Additionally, we have taken great care to
-                    include only those freight leads that meet our stringent criteria which defines every shipper as
+                    less-than-truckload shipper, or in many cases, as both. Additionally, we have taken great care
+                    to
+                    include only those freight leads that meet our stringent criteria which defines every shipper
+                    as
                     "approachable" by even the most inexperienced sales people.
                   </p>
                 </dd>
@@ -446,7 +1622,8 @@
                 </dt>
                 <dd class="pr-12 mt-2" x-show="openPanel === 3">
                   <p class="leading-6 text-white text-inter-base">
-                    The companies curated in The National Register of FTL & LTL Shippers, 2020 Edition® ship an array
+                    The companies curated in The National Register of FTL & LTL Shippers, 2020 Edition® ship an
+                    array
                     of
                     some of the highest yield freight in terms of transportation provider earnings
 
@@ -465,7 +1642,8 @@
                     class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-white">
                     <span
                       class="py-2 font-black leading-none text-left text-yellow-300 text-inter-lg sm:text-inter-2xl sm:leading-10">
-                      I want to start a freight transportation business. How can this database of shippers help me?
+                      I want to start a freight transportation business. How can this database of shippers help
+                      me?
                     </span>
                     <span class="flex items-center ml-6 h-7">
                       <svg class="w-6 h-6 transform" :class="{ '-rotate-180': openPanel === 4 }" stroke="currentColor"
@@ -477,15 +1655,19 @@
                 </dt>
                 <dd class="pr-12 mt-2" x-show="openPanel === 4">
                   <p class="leading-6 text-white text-inter-base">
-                    Starting a freight trucking business in North America requires compliance to a plethora of rules
+                    Starting a freight trucking business in North America requires compliance to a plethora of
+                    rules
                     and
-                    regulations set forth by the authorities and the costs associated with doing so can escalate very
+                    regulations set forth by the authorities and the costs associated with doing so can escalate
+                    very
                     rapidly. As the owner of a start-up transportation company, you have several activities that
                     require
                     your full, undivided attention, yet your time is limited. The National Register of FTL & LTL
-                    Shippers, 2020 Edition® benefits new trucking company owners by saving them time as the targeted
+                    Shippers, 2020 Edition® benefits new trucking company owners by saving them time as the
+                    targeted
                     freight leads are listed in one convenient resource; no more wasted time fishing for prospects
-                    through endless internet searches or in other ambiguous publications. Additionally, there is only
+                    through endless internet searches or in other ambiguous publications. Additionally, there is
+                    only
                     one low price to pay for this goldmine of a resource!
                   </p>
                 </dd>
@@ -498,7 +1680,8 @@
                     class="flex items-start justify-between w-full text-left text-gray-400 focus:outline-none focus:text-white">
                     <span
                       class="py-2 font-black leading-none text-left text-yellow-300 text-inter-lg sm:text-inter-2xl sm:leading-10">
-                      As a dispatcher, I use load boards to find freight for my drivers. How do these freight shipper
+                      As a dispatcher, I use load boards to find freight for my drivers. How do these freight
+                      shipper
                       leads compare?
                     </span>
                     <span class="flex items-center ml-6 h-7">
@@ -511,15 +1694,20 @@
                 </dt>
                 <dd class="pr-12 mt-2" x-show="openPanel === 5">
                   <p class="leading-6 text-white text-inter-base">
-                    Load boards typically require their customers to pay recurring membership or access fees for the
-                    privilege of bidding on posted loads. The vast majority of the postings are bogus loads posted by
-                    users to gather information on current shipping rates on various trucking lanes. Carriers bidding
+                    Load boards typically require their customers to pay recurring membership or access fees for
+                    the
+                    privilege of bidding on posted loads. The vast majority of the postings are bogus loads posted
+                    by
+                    users to gather information on current shipping rates on various trucking lanes. Carriers
+                    bidding
                     on
                     freight never truly know if the posted loads are for actual freight that physically exists or
                     whether they are wasting their time with something fictitious.
 
-                    With The National Register of FTL & LTL Shippers, 2020 Edition® there are NO usage fees or other
-                    recurring charges. You only pay for the database once and the freight leads are yours to keep. The
+                    With The National Register of FTL & LTL Shippers, 2020 Edition® there are NO usage fees or
+                    other
+                    recurring charges. You only pay for the database once and the freight leads are yours to keep.
+                    The
                     companies listed in the directory are actual shippers of real, physical product.
                   </p>
                 </dd>
@@ -544,15 +1732,18 @@
                 </dt>
                 <dd class="pr-12 mt-2" x-show="openPanel === 6">
                   <p class="leading-6 text-white text-inter-base">
-                    Because your time is finite and precious and we believe that time is the most valuable resource
-                    anyone has. Period. Therefore, every sales call made should be worth the time spent dialing and
+                    Because your time is finite and precious and we believe that time is the most valuable
+                    resource
+                    anyone has. Period. Therefore, every sales call made should be worth the time spent dialing
+                    and
                     conversing on the phone and every prospecting effort should result in revenue generation.
 
                     We have painstakingly compiled qualified FTL and LTL freight shippers into one convenient
                     resource,
                     to save you time. So unless you're planning on living forever and have unlimited time on your
                     hands,
-                    (in which case, please contact us and do tell us your secret!), The National Register of FTL & LTL
+                    (in which case, please contact us and do tell us your secret!), The National Register of FTL &
+                    LTL
                     Shippers, 2020 Edition® is meant to save you time and help generate new business,
                     cost-efficiently.
                   </p>
@@ -563,493 +1754,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- /End of Frequently Asked Questions -->
 
 
 
-  <!-- Testimonial -->
-  <div class="py-12 overflow-hidden bg-gray-50 md:py-20 lg:py-24 hero-bg-animated" style="background-color: #340382;">
-    <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-      <svg
-        class="absolute transform opacity-25 top-full right-full translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2"
-        width="404" height="404" fill="none" viewBox="0 0 404 404">
-        <defs>
-          <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20"
-            patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
-        </defs>
-        <rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)" />
-      </svg>
 
-      <div class="relative text-white">
-        <p class="text-center text-white text-inter-2xl">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <blockquote class="mt-8 ">
-          <div class="max-w-3xl px-2 mx-auto leading-none tracking-wide text-center font-semi-bold text-inter-xl">
-            <p>
-              &ldquo;New account successfully closed and this shipper is a whale! Working with your team has been an eye
-              opening experience for us. Thank you!&rdquo;
-            </p>
-          </div>
-          <footer class="mt-8 ">
-            <div class="md:flex md:items-center md:justify-center">
-              <div class="md:flex-shrink-0">
-                <img class="w-12 h-12 mx-auto rounded-full"
-                  src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
-                  alt="" />
-              </div>
-              <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                <div class="font-medium leading-6 text-white text-inter-base">T. Adams | Fort
-                  Worth, TX</div>
-
-                <!-- <svg class="hidden w-5 h-5 mx-1 text-indigo-600 md:block" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M11 0h3L9 20H6l5-20z" /> -->
-                </svg>
-
-
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-  <!-- /End of Testimonial -->
-
-
-
-  <!-- Book CTA Overlay -->
-
-  <div id="nationalregister" class="">
-
-    <div class="pt-12 pb-16 mt-8 sm:pt-16 lg:pt-20 sm:mt-12 sm:pb-20 lg:pb-28">
-      <div class="relative">
-        <div class="absolute inset-0 h-1/2"></div>
-        <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-
-          <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-2xl lg:max-w-none lg:flex">
-            <div class="px-6 py-8 text-center lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-              <img data-aos="flip-right" data-aos-duration="1100" class="relative mx-auto " height=""
-                src="./assets/png/2020_d_1.png" alt="" />
-
-            </div>
-            <div class="px-6 py-8 lg:flex-shrink-1 lg:p-12">
-              <h3 data-aos="fade-down" data-aos-duration="1000"
-                class="mt-1 font-black leading-tight tracking-tighter text-yellow-300 text-inter-4xl sm:leading-none sm:text-inter-6xl lg:text-inter-5xl md:text-inter-3xl">
-                The National Register of FTL & LTL Shippers,
-                2020 Edition®
-              </h3>
-              <p class="font-medium leading-6 text-white text-inter-lg">
-                Buy once, own it forever.
-              </p>
-              <div class="flex items-center mt-4 ">
-                <span class="font-extrabold leading-none text-white text-inter-5xl">
-                  $197
-                </span>
-                <span class="ml-3 font-bold leading-7 text-gray-400 line-through text-inter-lg">
-                  $397
-                </span>
-              </div>
-              <p class="mt-4 leading-5 text-inter-sm">
-                <a href="#" class="font-medium text-white underline">
-                  Learn about our terms and conditions
-                </a>
-              </p>
-              <div class="mt-6">
-                <div class="rounded-md shadow">
-                  <a href="#"
-                    class="flex items-center justify-center px-5 py-3 font-bold leading-6 text-black transition duration-150 ease-in-out bg-yellow-300 border border-transparent rounded-md text-inter-base hover:bg-yellow-500 focus:outline-none focus:shadow-outline">
-                    book more loads
-                  </a>
-                </div>
-              </div>
-              <div class="mt-4 leading-5 text-inter-sm">
-                <!-- <a href="#" class="font-medium text-gray-900">
-                  Get a free sample lead
-                  <span class="font-normal text-gray-500">
-                    (1 per visitor)
-                  </span>
-                </a> -->
-              </div>
-              <div class="mt-8">
-                <!-- <div class="flex items-center">
-                  <h4
-                    class="flex-shrink-0 pr-4 font-semibold leading-5 tracking-wider text-yellow-300 uppercase text-inter-sm ">
-                    What's included
-                  </h4>
-                  <div class="flex-1 border-t-2 border-yellow-300"></div>
-                </div> -->
-                <ul class="mt-8 lg:grid lg:grid-cols-1 lg:col-gap-8 lg:row-gap-5">
-                  <li class="flex items-start lg:col-span-1">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      3,000+ domestic US shippers
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      100,000+ FTL & LTL loads moved daily
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      Freight leads categorized by State
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      Decision maker contact info included
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      Descriptions of commodities shipped
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      PDF file format for use across multiple devices
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      CSV file format available separately for upload to CRM
-                    </p>
-                  </li>
-                  <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-                    <div class="flex-shrink-0">
-                      <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                    <p class="ml-3 leading-5 text-white text-inter-sm">
-                      Sales training & cold calling scripts available separately
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Book Product Banner -->
-  <!-- <section class="py-16">
-    <div class="py-16 overflow-hidden lg:py-24" style="background-color: #340382;">
-      <div class="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <svg class="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4" width="404"
-          height="784" fill="none" viewBox="0 0 404 784">
-          <defs>
-            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
-              patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
-        </svg>
-
-
-
-        <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div class="relative">
-            <h4 class="font-extrabold leading-none tracking-tight text-yellow-300 text-inter-2xl sm:leading-none">
-              The National Register of FTL & LTL Shippers, <br>2020 Edition®
-            </h4>
-
-            <ul class="mt-5">
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; 3,000+ domestic US
-                      shippers</h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; 100,000+ FTL & LTL loads
-                      moved daily
-                    </h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; Freight leads categorized
-                      by State
-                    </h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; Decision maker contact info
-                      included
-                    </h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003;Descriptions of commodities
-                      shipped
-                    </h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; PDF file format for use
-                      across
-                      multiple
-                      devices</h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; CSV file format available
-                      separately
-                      for
-                      upload to CRM</h5>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                  </div>
-                  <div class="ml-4">
-                    <h5 class="font-medium leading-normal text-white text-inter-lg">&#10003; Sales training & cold
-                      calling scripts
-                      available separately</h5>
-                  </div>
-                </div>
-              </li>
-
-
-
-            </ul>
-
-            <span><button class="mt-2" type="button"
-                class="inline-flex items-center px-6 py-3 font-medium leading-6 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md text-inter-base text-yellow hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
-                Button text
-              </button></span>
-          </div>
-
-
-          <div class="relative mt-10 -mx-4 lg:mt-0">
-            <svg class="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden" width="784" height="404"
-              fill="none" viewBox="0 0 784 404">
-              <defs>
-                <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20"
-                  patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
-            </svg>
-
-            <img data-aos="flip-right" data-aos-duration="1100" class="relative mx-auto" height=""
-              src="./assets/png/2020_d_1.png" alt="" />
-
-
-
-          </div>
-
-        </div>
-
-        <svg class="absolute hidden transform translate-x-1/2 translate-y-12 lg:block right-full" width="404"
-          height="784" fill="none" viewBox="0 0 404 784">
-          <defs>
-            <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
-              patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-        </svg>
-
-        <div class="relative mt-12 sm:mt-16 lg:mt-24">
-
-        </div>
-      </div>
-    </div>
-
-
-  </section>  -->
-  <!-- /End of Book Product Banner -->
-
-
-
-
-  <!-- Customer Testimonials  -->
-  <div class="overflow-hidden ">
-    <div class="relative max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
-      <svg
-        class="absolute top-0 transform -translate-x-1/2 left-full -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
-        width="404" height="784" fill="none" viewBox="0 0 404 784">
-        <defs>
-          <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20"
-            patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
-        </defs>
-        <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
-      </svg>
-
-      <div class="relative lg:grid lg:grid-cols-3 lg:col-gap-8">
-        <div class="lg:col-span-1">
-          <h3
-            class="font-extrabold leading-none tracking-tight text-yellow-300 text-inter-3xl sm:text-inter-4xl sm:leading-10">
-            customer testimonials
-          </h3>
-        </div>
-
-
-        <div class="mt-10 sm:grid sm:grid-cols-2 sm:col-gap-8 sm:row-gap-10 lg:col-span-2 lg:mt-0">
-          <div>
-            <div class="flex items-center justify-center w-12 h-12 text-white rounded-md">
-              <img class="w-12 h-12 mx-auto rounded-full"
-                src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
-                alt="" />
-            </div>
-            <div class="mt-5">
-              <h5 class="font-medium leading-6 text-yellow-300 text-inter-lg">Valued Customer Name | Location</h5>
-              <p class="mt-2 leading-6 text-white text-inter-base">
-                Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.
-              </p>
-            </div>
-          </div>
-          <div class="mt-10 sm:mt-0">
-            <div class="flex items-center justify-center w-12 h-12 text-white rounded-md">
-              <img class="w-12 h-12 mx-auto rounded-full"
-                src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
-                alt="" />
-            </div>
-            <div class="mt-5">
-              <h5 class="font-medium leading-6 text-yellow-300 text-inter-lg">Valued Customer Name | Location</h5>
-              <p class="mt-2 leading-6 text-white text-inter-base">
-                Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio
-                ratione.
-              </p>
-            </div>
-          </div>
-          <div class="mt-10 sm:mt-0">
-            <div class="flex items-center justify-center w-12 h-12 text-white rounded-md">
-              <img class="w-12 h-12 mx-auto rounded-full"
-                src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
-                alt="" />
-            </div>
-            <div class="mt-5">
-              <h5 class="font-medium leading-6 text-yellow-300 text-inter-lg">Valued Customer Name | Location</h5>
-              <p class="mt-2 leading-6 text-white text-inter-base">
-                Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit
-                doloribus mollitia.
-              </p>
-            </div>
-          </div>
-          <div class="mt-10 sm:mt-0">
-            <div class="flex items-center justify-center w-12 h-12 text-white rounded-md">
-              <img class="w-12 h-12 mx-auto rounded-full"
-                src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
-                alt="" />
-            </div>
-            <div class="mt-5">
-              <h5 class="font-medium leading-6 text-yellow-300 text-inter-lg">Valued Customer Name | Location</h5>
-              <p class="mt-2 leading-6 text-white text-inter-base">
-                Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde
-                accusantium.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  Customer Testimonials -->
 
 
   <!-- Stats -->
 
 
-  <div class="px-8 py-16">
+  <!-- <div class="px-8 py-16">
 
     <h3 data-aos="fade-down" data-aos-duration="1000"
       class="font-bold leading-7 text-yellow-300 text-inter-2xl sm:text-inter-3xl sm:leading-9 sm:truncate">
@@ -1112,7 +1828,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- /End of Stats-->
 
 
@@ -1156,14 +1872,8 @@
   <script src="./script.js"></script>
 
 
-  <!-- <div class="hero">
-    <video autoplay loop src="https://goo.gl/rkMBfx"></video>
-    <header class="grid-overlay">
-      <h1>Hero Background Video</h1>
-    </header>
-  </div> -->
-
-  <section class="mt-8 shadow-xl video-footer-section">
+  <!-- Footer Video Text Overlay -->
+  <!-- <section class="mt-8 shadow-xl video-footer-section">
     <div class="video">
       <video class="video-object" width="1920" height="1280" autoplay muted loop>
         <source src="https://freightleads.netlify.com/assets/vid/lion-ghost.mp4" type="video/mp4" />
@@ -1176,9 +1886,9 @@
         leader of the freight jungle
       </h1>
     </div>
-  </section>
+  </section> -->
 
-  <!-- /Video Text Overlay -->
+  <!-- /End of  Footer Video Text Overlay -->
 
 
 
@@ -1420,6 +2130,11 @@
   <script>
     AOS.init();
   </script>
+
+
+
+
+
 </body>
 
 </html>
