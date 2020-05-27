@@ -181,17 +181,17 @@
 
 
 .bg-gradient {
-  background: #fbcf2c;
+  background: #111422;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #faca15, #fbcf2c);
+  background: -webkit-linear-gradient(to top, #0c132d, #111422);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #faca15, #fbcf2c);
+  background: linear-gradient(to top, #0c132d, #111422);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .helpcard-gradient {
-  background: linear-gradient(131deg, #1a1b1c, #343535, #1a1b1c, #343535);
+  background: linear-gradient(180deg, #161826, #323544, #181b2a, #1b1e2f);
   background-size: 200% 200%;
 
   -webkit-animation: HelpCardAnimation 8s ease infinite;
@@ -263,23 +263,20 @@
 
 
 .servicecard-gradient {
-  background: #18453B;
-background: linear-gradient(to bottom, #18453B 0%, #09362C 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #18453B), color-stop(100%, #09362C));
-background: -webkit-linear-gradient(top, #18453B 0%, #09362C 100%);
-background: -moz-linear-gradient(top, #18453B 0%, #09362C 100%);
-background: -o-linear-gradient(top, #18453B 0%, #09362C 100%);
-background: -ms-linear-gradient(top, #18453B 0%, #09362C 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#18453B', endColorstr='#09362C', GradientType=0);
-border: 1px solid #00271D;
-box-shadow: inset 0 1px 0 #27544A;
--webkit-box-shadow: inset 0 1px 0 #27544A;
--moz-box-shadow: inset 0 1px 0 #27544A;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
-  -webkit-animation: servicecardAnimation 8s ease infinite;
-  -moz-animation: servicecardAnimation 8s ease infinite;
-  -o-animation: servicecardAnimation 8s ease infinite;
-  animation: servicecardAnimation 8s ease infinite;
+background-image: url(https://images.unsplash.com/photo-1587573088621-f8719d182405?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
+
+
+
+  -webkit-animation: servicecardAnimation 60s ease infinite;
+  -moz-animation: servicecardAnimation 60s ease infinite;
+  -o-animation: servicecardAnimation 60s ease infinite;
+  animation: servicecardAnimation 60s ease infinite;
 }
 
 @-webkit-keyframes servicecardAnimation {
@@ -357,7 +354,7 @@ box-shadow: inset 0 1px 0 #27544A;
 
 .service-glow {
   box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
- }
+}
 
 
 
