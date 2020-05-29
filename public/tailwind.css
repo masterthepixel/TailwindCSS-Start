@@ -9,6 +9,38 @@
 
 
 
+
+
+/**
+ * 
+ * Tailwind - Simple Parallax Background Images
+ *
+ */
+
+ .bg-header {
+  background: url(https://images.unsplash.com/photo-1582815464803-2ade81b7d494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) center center no-repeat;
+  background-attachment: fixed;
+  background-attachment: cover;
+}
+
+.bg-quote {
+  background: url(https://picsum.photos/1600/1600/?random) center center no-repeat;
+  background-attachment: fixed;
+}
+
+/**
+ * 
+ * Tailwind - Simple Parallax Background Images
+ *
+ */
+
+
+
+
+
+
+
+
 .carousel {
   background: #010203;
 }
@@ -163,7 +195,43 @@
 
 }
 
-.helpcard-gradient {
+
+.helpcard-gradient{
+  /* https://cssgradient.io/gradient-backgrounds/ - Night Sky */
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);  
+   /* background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */
+
+
+ 
+  
+}
+
+.servicecard-pattern{
+
+  background-color: #0f3073;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%230f3073' width='11' height='11'/%3E%3Crect fill='%230f3072' x='10' width='11' height='11'/%3E%3Crect fill='%230f2f70' y='10' width='11' height='11'/%3E%3Crect fill='%230f2f6f' x='20' width='11' height='11'/%3E%3Crect fill='%230f2e6e' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%230f2e6c' y='20' width='11' height='11'/%3E%3Crect fill='%230f2d6b' x='30' width='11' height='11'/%3E%3Crect fill='%23102d6a' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23102c68' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23102c67' y='30' width='11' height='11'/%3E%3Crect fill='%23102b66' x='40' width='11' height='11'/%3E%3Crect fill='%23102b64' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23102a63' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23102a62' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23102960' y='40' width='11' height='11'/%3E%3Crect fill='%2310295f' x='50' width='11' height='11'/%3E%3Crect fill='%2310285e' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%2310285c' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%2310275b' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%2310275a' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23102658' y='50' width='11' height='11'/%3E%3Crect fill='%23102657' x='60' width='11' height='11'/%3E%3Crect fill='%23102556' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23102554' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23102453' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23102452' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23102351' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2310234f' x='70' width='11' height='11'/%3E%3Crect fill='%2310224e' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%2310224d' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%2310214b' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%2310214a' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23102049' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23102048' x='80' width='11' height='11'/%3E%3Crect fill='%23101f46' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23101f45' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23101e44' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23101e43' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23101d41' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23101d40' x='90' width='11' height='11'/%3E%3Crect fill='%23101c3f' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23101c3e' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23101b3c' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23101b3b' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%230f1a3a' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%230f1a39' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%230f1a37' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%230f1936' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%230f1935' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%230f1834' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230f1833' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230f1731' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230f1730' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230f162f' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230e162e' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230e152d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230e152c' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230e142a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230e1429' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230e1328' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+.portfolio-pattern {
+  /* https://www.svgbackgrounds.com/#wavey-fingerprint */
+  background-color: #0e1327;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.faq-pattern {
+  /* https://www.svgbackgrounds.com/#flat-mountains */
+  background-color: #0d1329;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23e6e7f0' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230c2d4d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23bcc5d3' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%230d3356' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2391a3b6' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230e3a5f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2367819a' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230f4067' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%233c5f7d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23104770' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23123d60' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23114d79' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.arsenic-gradient {
   background: linear-gradient(180deg, #161826, #323544, #181b2a, #1b1e2f);
   background-size: 200% 200%;
 

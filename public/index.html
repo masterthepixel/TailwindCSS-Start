@@ -40,159 +40,80 @@
   <script>
   </script>
 
+
+
 </head>
 
 <body class="antialiased debug-screens bg-gradient">
 
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  </div>
 
-  <!-- Header Area + Navigation -->
+  <header class="flex items-center justify-center h-screen pb-12 bg-header">
+    <!-- Hero Area  -->
 
-  <div class="relative overflow-hidden ">
-    <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
-      <div class="relative h-full max-w-screen-xl mx-auto">
-        <svg class="absolute transform right-full translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404"
-          height="784" fill="none" viewBox="0 0 404 784">
-          <defs>
-            <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
-              patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
-        </svg>
-        <svg
-          class="absolute transform left-full -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-          width="404" height="784" fill="none" viewBox="0 0 404 784">
-          <defs>
-            <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20"
-              patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
-        </svg>
-      </div>
-    </div>
-
-    <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-      <div class="max-w-screen-xl px-4 mx-auto sm:px-6">
-        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
-          <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-            <div class="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <img class="w-auto h-8 sm:h-10" src="/img/logos/workflow-mark-on-white.svg" alt="" />
-              </a>
-              <div class="flex items-center -mr-2 md:hidden">
-                <button type="button"
-                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
-                  <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:block">
-            <a href="#"
-              class="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Product</a>
-            <a href="#"
-              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Features</a>
-            <a href="#"
-              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Marketplace</a>
-            <a href="#"
-              class="ml-10 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900">Company</a>
-          </div>
-          <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-            <span class="inline-flex rounded-md shadow">
-              <a href="#"
-                class="inline-flex items-center px-4 py-2 font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700">
-                Log in
-              </a>
-            </span>
-          </div>
-        </nav>
-      </div>
-
-      <!--
-        Mobile menu, show/hide based on menu open state.
-  
-        Entering: "duration-150 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-        Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      -->
-      <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
-        <div class="rounded-lg shadow-md">
-          <div class="overflow-hidden bg-white rounded-lg shadow-xs">
-            <div class="flex items-center justify-between px-5 pt-4">
-              <div>
-                <img class="w-auto h-8" src="/img/logos/workflow-mark-on-white.svg" alt="" />
-              </div>
-              <div class="-mr-2">
-                <button type="button"
-                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
-                  <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="px-2 pt-2 pb-3">
-              <a href="#"
-                class="block px-3 py-2 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Product</a>
-              <a href="#"
-                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Features</a>
-              <a href="#"
-                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Marketplace</a>
-              <a href="#"
-                class="block px-3 py-2 mt-1 font-medium text-gray-700 transition duration-150 ease-in-out rounded-md text-inter-base hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">Company</a>
-            </div>
-            <div>
-              <a href="#"
-                class="block w-full px-5 py-3 font-medium text-center text-indigo-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700">
-                Log in
-              </a>
-            </div>
-          </div>
+    <div class="relative overflow-hidden rounded-lg shadow-2xl">
+      <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
+        <div class="relative h-full max-w-screen-xl mx-auto">
+          <svg class="absolute transform right-full translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404"
+            height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+              <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+          </svg>
+          <svg
+            class="absolute transform left-full -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
+            width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+              <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+          </svg>
         </div>
       </div>
 
-      <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-        <div class="text-center">
-          <h2
-            class="font-extrabold leading-10 tracking-tight text-white text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-6xl">
-            Data to enrich your
-            <br class="xl:hidden" />
-            <span class="text-yellow-500">online business</span>
-          </h2>
-          <p
-            class="max-w-md mx-auto mt-3 text-gray-100 text-inter-base sm:text-inter-lg md:mt-5 md:text-inter-xl md:max-w-3xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
-          </p>
-          <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
-            <div class="rounded-md shadow">
-              <a href="#"
-                class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-inter-lg md:px-10">
-                Get started
-              </a>
-            </div>
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a href="#"
-                class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-inter-lg md:px-10">
-                Live demo
-              </a>
+      <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+        <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <div class="text-center text-shadow-drop-br">
+            <h2
+              class="font-extrabold leading-10 tracking-tight text-white text-inter-4xl sm:text-inter-5xl sm:leading-none md:text-inter-6xl">
+              Data to enrich your
+              <br class="xl:hidden" />
+              <span class="text-orange-400">online business</span>
+            </h2>
+            <!-- <p
+              class="max-w-md mx-auto mt-3 text-orange-400 text-inter-base sm:text-inter-lg md:mt-5 md:text-inter-xl md:max-w-3xl">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+              fugiat veniam occaecat fugiat aliqua.
+            </p> -->
+            <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+              <div class="rounded-md shadow">
+                <a href="#"
+                  class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md text-inter-base hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-inter-lg md:px-10">
+                  Get started
+                </a>
+              </div>
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <a href="#"
+                  class="flex items-center justify-center w-full px-8 py-3 font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-inter-base hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-inter-lg md:px-10">
+                  Live demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+
+    <!-- /End of Hero Area  -->
+  </header>
 
   <!---  Primary Services Area -->
 
@@ -462,16 +383,13 @@
 
   <!---  /End of Primary Services Area -->
 
-  <!-- /End of Header Area + Navigation -->
-
-
-
-  <!---   Parallax Spacer Area  -->
-
-  <section class="shadow-inner spacer-gradient h-96">
-
-  </section>
-  <!--- /End of Parallax Spacer Area  -->
+  <div class="container flex items-center justify-center h-screen mx-auto bg-quote">
+    <blockquote class="p-4 mx-4 text-center text-white bg-black md:p-8">
+      <p class="text-3xl italic font-bold">
+        &ldquo;Large, bold pull quote. Hats. Very good.&rdquo;
+      </p>
+    </blockquote>
+  </div>
 
   <!--- About Us  Area -->
   <div class="... ">
@@ -669,6 +587,23 @@
   </div>
   <!--- /End of About Us  Area -->
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  </div>
+
+
+
+
+
+  <!---   Parallax Spacer Area  -->
+
+  <section class="shadow-inner spacer-gradient h-96">
+
+  </section>
+  <!--- /End of Parallax Spacer Area  -->
+
+
+
   <!---   Parallax Spacer Area  -->
 
   <section class="shadow-inner spacer-gradient h-96">
@@ -679,298 +614,127 @@
   <!-- Slides -->
 
   <!--- ### Project + Client Portfolio Slides ### -->
-
-  <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-    <div class="">
-      <h2
-        class="font-extrabold leading-none tracking-tight text-blue-600 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
-        Client Portfolio<br class="xl:visible" />
-        <span class="text-gray-50">projects + work</span>
-      </h2>
-      <div class="max-w-3xl pt-10 mt-6 border-t-2 border-blue-600"></div>
-      <p class="max-w-md text-gray-100 text-inter-base sm:text-inter-lg md:text-inter-xl md:max-w-3xl">
-        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
-        veniam occaecat fugiat aliqua.
-      </p>
-      <div class="flex justify-start mt-4">
-        <div class="inline-flex rounded-md shadow">
-          <a href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none ... bg-opacity-75 focus:shadow-outline">
-            Get started
-          </a>
-        </div>
-        <div class="inline-flex ml-3">
-          <a href="#"
-            class="inline-flex items-center justify-center px-5 py-3 font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md text-inter-base hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300">
-            Learn more
-          </a>
+  <section class="py-8 portfolio-pattern">
+    <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28 ">
+      <div class="">
+        <h2
+          class="font-extrabold leading-none tracking-tight text-blue-600 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
+          Client Portfolio<br class="xl:visible" />
+          <span class="text-gray-50">projects + work</span>
+        </h2>
+        <div class="max-w-3xl pt-10 mt-6 border-t-2 border-blue-600"></div>
+        <p class="max-w-md text-gray-100 text-inter-base sm:text-inter-lg md:text-inter-xl md:max-w-3xl">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+          fugiat
+          veniam occaecat fugiat aliqua.
+        </p>
+        <div class="flex justify-start mt-4">
+          <div class="inline-flex rounded-md shadow">
+            <a href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none ... bg-opacity-75 focus:shadow-outline">
+              Get started
+            </a>
+          </div>
+          <div class="inline-flex ml-3">
+            <a href="#"
+              class="inline-flex items-center justify-center px-5 py-3 font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md text-inter-base hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300">
+              Learn more
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Andrew Bird Project -->
-  <!-- Freight Leads Project -->
-  <!-- JIBPM  Project -->
-  <!-- Jiant Renovations Project -->
-  <!-- Sir Wax A Lot Project -->
-  <!-- Non Profit Assocation Project -->
+    <!-- Andrew Bird Project -->
+    <!-- Freight Leads Project -->
+    <!-- JIBPM  Project -->
+    <!-- Jiant Renovations Project -->
+    <!-- Sir Wax A Lot Project -->
+    <!-- Non Profit Assocation Project -->
 
-  <!--- /End of ### Project + Client Portfolio Slides ### -->
+    <!--- /End of ### Project + Client Portfolio Slides ### -->
 
-  <!-- Project + Client Portfolio Slider main container -->
+    <!-- Project + Client Portfolio Slider main container -->
 
-  <section class="max-w-screen-xl px-4 pb-16 mx-auto mt-4 sm:mt-6 sm:px-6 ">
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full pt-4 pl-4" src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Smeedies Maritime</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/allejiant_www_mobile_mockup.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
+    <div class="max-w-screen-xl px-4 pb-16 mx-auto mt-4 sm:mt-6 sm:px-6 ">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-blue-600 border-opacity-25 hover:border-blue-800 hover:border-opacity-75">
+              <div class="relative z-10 helpcard-filter">
+                <img class="w-full pt-4 pl-4" src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
+              </div>
+              <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
+                <p
+                  class="flex items-center pr-2 font-black leading-none text-gray-50 text-shadow-drop-br text-inter-3xl">
+                  Smeedies Maritime</p>
+                <button
+                  class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path class="text-gray-200 fill-current heroicon-ui"
+                      d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="px-6 pt-3 pb-8 ">
+                <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
+                  residential and commercial markets. The company specializes in remodeling projects from finishing a
+                  basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
+              </div>
             </div>
           </div>
 
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
 
         </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
 
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full pt-4 pl-4" src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Smeedies Maritime Shipping Agency</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/allejiant_www_mobile_mockup.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="  mx-auto my-2 overflow-hidden  rounded-lg shadow-2xl ... max-w-md helpcard-gradient border border-black border-opacity-50 hover:border-blue-800 hover:border-opacity-75">
-            <div class="relative z-10 helpcard-filter">
-              <img class="w-full " src="../assets/png/smeediesmaritime_www_mobile.png" alt="Profile image" />
-            </div>
-            <div class="relative z-50 flex flex-row items-center justify-between px-6 mt-4">
-              <p class="flex items-center pr-2 font-bold leading-none text-blue-400 text-inter-2xl text-shadow-drop-br">
-                Allejiant Project Management</p>
-              <button
-                class="p-1 transition duration-200 ease-in bg-blue-600 bg-opacity-75 rounded-full hover:bg-blue-800 focus:bg-blue-700 focus:shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path class="text-gray-200 fill-current heroicon-ui"
-                    d="M4.06 13a8 8 0 0 0 5.18 6.51A18.5 18.5 0 0 1 8.02 13H4.06zm0-2h3.96a18.5 18.5 0 0 1 1.22-6.51A8 8 0 0 0 4.06 11zm15.88 0a8 8 0 0 0-5.18-6.51A18.5 18.5 0 0 1 15.98 11h3.96zm0 2h-3.96a18.5 18.5 0 0 1-1.22 6.51A8 8 0 0 0 19.94 13zm-9.92 0c.16 3.95 1.23 7 1.98 7s1.82-3.05 1.98-7h-3.96zm0-2h3.96c-.16-3.95-1.23-7-1.98-7s-1.82 3.05-1.98 7zM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
-              </button>
-            </div>
-            <div class="px-6 pt-3 pb-8 ">
-              <p class="font-medium leading-5 text-gray-100 text-inter-base"> Construction Project Management for
-                residential and commercial markets. The company specializes in remodeling projects from finishing a
-                basement, remodeling a kitchen, bathroom or a whole house construction project. </p>
-            </div>
-          </div>
-
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
 
       </div>
 
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          grabCursor: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 22,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 28,
+            },
+
+          }
+          keyboard: {
+            enabled: true,
+          },
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
 
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        grabCursor: true,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 22,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 28,
-          },
-
-        }
-        keyboard: {
-          enabled: true,
-        },
-        freeMode: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    </script>
-
   </section>
-
   <!--- /End of  Project + Client Portfolio Area -->
 
   <!---   Parallax Spacer Area  -->
@@ -988,222 +752,226 @@
 
   <!---   Services Card Area  -->
 
+  <section class="">
 
-  <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-    <div class="">
-      <h2
-        class="font-extrabold leading-none tracking-tight text-yellow-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
-        Technology services<br class="xl:visible" />
-        <span class="text-gray-50">to grow your business</span>
-      </h2>
-      <div class="max-w-3xl pt-10 mt-6 border-t-2 border-yellow-400"></div>
-      <p class="max-w-md text-gray-100 text-inter-base sm:text-inter-lg md:text-inter-xl md:max-w-3xl">
-        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
-        veniam occaecat fugiat aliqua.
-      </p>
-      <div class="flex justify-start mt-4">
-        <div class="inline-flex rounded-md shadow">
-          <a href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none ... bg-opacity-75 focus:shadow-outline">
-            Get started
-          </a>
-        </div>
-        <div class="inline-flex ml-3">
-          <a href="#"
-            class="inline-flex items-center justify-center px-5 py-3 font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md text-inter-base hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300">
-            Learn more
-          </a>
+    <div class="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+      <div class="">
+        <h2
+          class="font-extrabold leading-none tracking-tight text-yellow-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
+          Technology services<br class="xl:visible" />
+          <span class="text-gray-50">to grow your business</span>
+        </h2>
+        <div class="max-w-3xl pt-10 mt-6 border-t-2 border-yellow-400"></div>
+        <p class="max-w-md text-gray-100 text-inter-base sm:text-inter-lg md:text-inter-xl md:max-w-3xl">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+          fugiat
+          veniam occaecat fugiat aliqua.
+        </p>
+        <div class="flex justify-start mt-4">
+          <div class="inline-flex rounded-md shadow">
+            <a href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none ... bg-opacity-75 focus:shadow-outline">
+              Get started
+            </a>
+          </div>
+          <div class="inline-flex ml-3">
+            <a href="#"
+              class="inline-flex items-center justify-center px-5 py-3 font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md text-inter-base hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300">
+              Learn more
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Designing your digital product -->
-  <!-- Desiging a Shopify store -->
-  <!-- Building a custom responsive site -->
-  <!-- Giving a boost to your brand -->
-  <!-- Designing a native mobile app -->
-
+    <!-- Designing your digital product -->
+    <!-- Desiging a Shopify store -->
+    <!-- Building a custom responsive site -->
+    <!-- Giving a boost to your brand -->
+    <!-- Designing a native mobile app -->
 
 
 
 
-  <section class="max-w-screen-xl px-4 mx-auto mt-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-12 xl:mt-16 ">
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class=" swiper-slide">
-          <div class="max-w-md px-3 py-6 ">
-            <div
-              class="overflow-hidden bg-blue-500 bg-opacity-50 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
 
-              <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
-                <div class="inline-flex items-center flex-1">
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
-                    </path>
-                  </svg>
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                      d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
-                    </path>
-                  </svg>
+    <div class="max-w-screen-xl px-4 pb-8 mx-auto mt-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-12 xl:mt-16 ... shadow-2xl">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class=" swiper-slide">
+            <div class="max-w-md px-3 py-6 ">
+              <div
+                class="overflow-hidden bg-blue-500 bg-opacity-50 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
 
-                </div>
+                <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
+                  <div class="inline-flex items-center flex-1">
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
+                      </path>
+                    </svg>
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
+                      </path>
+                    </svg>
 
-              </div>
-
-              <div class="p-4 my-8">
-                <p class="font-black leading-none text-gray-100 text-inter-3xl">Building a custom responsive site</p>
-                <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
-                  Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <div class=" swiper-slide">
-          <div class="max-w-md px-3 py-6 ">
-            <div
-              class="overflow-hidden bg-blue-300 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
-
-              <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
-                <div class="inline-flex items-center flex-1">
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
-                    </path>
-                  </svg>
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                      d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
-                    </path>
-                  </svg>
+                  </div>
 
                 </div>
 
-              </div>
-
-              <div class="p-4 my-8">
-                <p class="font-black leading-none text-gray-100 text-inter-3xl">Designing a Shopify store</p>
-                <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
-                  Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <div class=" swiper-slide">
-          <div class="max-w-md px-3 py-6 ">
-            <div
-              class="overflow-hidden bg-green-300 bg-opacity-50 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
-
-              <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
-                <div class="inline-flex items-center flex-1">
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
-                    </path>
-                  </svg>
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                      d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
-                    </path>
-                  </svg>
-
+                <div class="p-4 my-8">
+                  <p class="font-black leading-none text-gray-100 text-inter-3xl">Building a custom responsive site</p>
+                  <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
+                    Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
                 </div>
 
               </div>
-
-              <div class="p-4 my-8">
-                <p class="font-black leading-none text-gray-100 text-inter-3xl">Boost to your brand thru SEO</p>
-                <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
-                  Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
-              </div>
-
             </div>
+
           </div>
+          <div class=" swiper-slide">
+            <div class="max-w-md px-3 py-6 ">
+              <div
+                class="overflow-hidden bg-blue-300 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
 
-        </div>
-        <div class=" swiper-slide">
-          <div class="max-w-md px-3 py-6 ">
-            <div
-              class="overflow-hidden bg-yellow-200 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
+                <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
+                  <div class="inline-flex items-center flex-1">
+                    <svg class="w-6 h-6 mr-3 text-gray-900 fill-current" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
+                      </path>
+                    </svg>
+                    <svg class="w-6 h-6 mr-3 text-gray-900 fill-current" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
+                      </path>
+                    </svg>
 
-              <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
-                <div class="inline-flex items-center flex-1">
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
-                    </path>
-                  </svg>
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                      d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
-                    </path>
-                  </svg>
+                  </div>
 
                 </div>
 
-              </div>
-
-              <div class="p-4 my-8">
-                <p class="font-black leading-none text-gray-100 text-inter-3xl">Designing a native mobile app</p>
-                <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
-                  Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <div class=" swiper-slide">
-          <div class="max-w-md px-3 py-6 ">
-            <div
-              class="overflow-hidden bg-orange-400 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
-
-              <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
-                <div class="inline-flex items-center flex-1">
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
-                    </path>
-                  </svg>
-                  <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                      d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
-                    </path>
-                  </svg>
-
+                <div class="p-4 my-8">
+                  <p class="font-black leading-none text-gray-900 text-inter-3xl">Designing a Shopify store</p>
+                  <p class="pt-4 text-gray-900 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly
+                    use
+                    Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
                 </div>
 
               </div>
-
-              <div class="p-4 my-8">
-                <p class="font-black leading-none text-gray-100 text-inter-3xl">Building a custom responsive site</p>
-                <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
-                  Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
-              </div>
-
             </div>
-          </div>
 
+          </div>
+          <div class=" swiper-slide">
+            <div class="max-w-md px-3 py-6 ">
+              <div
+                class="overflow-hidden bg-green-300 bg-opacity-50 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
+
+                <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
+                  <div class="inline-flex items-center flex-1">
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
+                      </path>
+                    </svg>
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
+                      </path>
+                    </svg>
+
+                  </div>
+
+                </div>
+
+                <div class="p-4 my-8">
+                  <p class="font-black leading-none text-gray-100 text-inter-3xl">Boost to your brand thru SEO</p>
+                  <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
+                    Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class=" swiper-slide">
+            <div class="max-w-md px-3 py-6 ">
+              <div
+                class="overflow-hidden bg-yellow-200 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
+
+                <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
+                  <div class="inline-flex items-center flex-1">
+                    <svg class="w-6 h-6 mr-3 text-gray-900 fill-current" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
+                      </path>
+                    </svg>
+                    <svg class="w-6 h-6 mr-3 text-gray-900 fill-current" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
+                      </path>
+                    </svg>
+
+                  </div>
+
+                </div>
+
+                <div class="p-4 my-8">
+                  <p class="font-black leading-none text-gray-900 text-inter-3xl">Designing a native mobile app</p>
+                  <p class="pt-4 text-gray-900 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly
+                    use
+                    Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class=" swiper-slide">
+            <div class="max-w-md px-3 py-6 ">
+              <div
+                class="overflow-hidden bg-orange-400 bg-opacity-75 rounded-lg shadow-xl ... border-opacity-50 border-gray-50  border-4 border-double">
+
+                <div class="flex p-4 border-b border-opacity-50 shadow-xl border-gray-50 text-gray-50">
+                  <div class="inline-flex items-center flex-1">
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M0 16L3 5V1a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4l3 11v5a1 1 0 0 1-1 1v2h-1v-2H2v2H1v-2a1 1 0 0 1-1-1v-5zM19 5h1V1H4v4h1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1zm0 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V6h-2v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6H3.76L1.04 16h21.92L20.24 6H19zM1 17v4h22v-4H1zM6 4v4h4V4H6zm8 0v4h4V4h-4z">
+                      </path>
+                    </svg>
+                    <svg class="w-6 h-6 mr-3 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M17.03 21H7.97a4 4 0 0 1-1.3-.22l-1.22 2.44-.9-.44 1.22-2.44a4 4 0 0 1-1.38-1.55L.5 11h7.56a4 4 0 0 1 1.78.42l2.32 1.16a4 4 0 0 0 1.78.42h9.56l-2.9 5.79a4 4 0 0 1-1.37 1.55l1.22 2.44-.9.44-1.22-2.44a4 4 0 0 1-1.3.22zM21 11h2.5a.5.5 0 1 1 0 1h-9.06a4.5 4.5 0 0 1-2-.48l-2.32-1.15A3.5 3.5 0 0 0 8.56 10H.5a.5.5 0 0 1 0-1h8.06c.7 0 1.38.16 2 .48l2.32 1.15a3.5 3.5 0 0 0 1.56.37H20V2a1 1 0 0 0-1.74-.67c.64.97.53 2.29-.32 3.14l-.35.36-3.54-3.54.35-.35a2.5 2.5 0 0 1 3.15-.32A2 2 0 0 1 21 2v9zm-5.48-9.65l2 2a1.5 1.5 0 0 0-2-2zm-10.23 17A3 3 0 0 0 7.97 20h9.06a3 3 0 0 0 2.68-1.66L21.88 14h-7.94a5 5 0 0 1-2.23-.53L9.4 12.32A3 3 0 0 0 8.06 12H2.12l3.17 6.34z">
+                      </path>
+                    </svg>
+
+                  </div>
+
+                </div>
+
+                <div class="p-4 my-8">
+                  <p class="font-black leading-none text-gray-100 text-inter-3xl">Building a custom responsive site</p>
+                  <p class="pt-4 text-gray-50 text-inter-base">Yes, I can code (HTML, CSS & JS). Currently, I mostly use
+                    Webflow as a platform. Need something complex? I know some amazing developers I can recommend.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <!-- Initialize Swiper -->
@@ -1234,13 +1002,13 @@
       });
     </script>
 
+    </div>
   </section>
-
   <!--- /Services Card Area  -->
 
   <!--- Call to Action Area  -->
 
-  <div class="py-8 spacer-gradient">
+  <div class="py-8 faq-pattern">
     <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
       <h2 class="font-extrabold leading-9 tracking-tight text-gray-50 text-inter-3xl sm:text-inter-4xl sm:leading-10">
         Ready to dive in?
@@ -1279,17 +1047,18 @@
   <!--- Frequently Asked Questions -->
 
 
-  <div class="... pt-12 sm:pt-16 lg:pt-20">
-    <div class="max-w-screen-xl px-4 pb-16 mx-auto sm:pb-20 sm:px-6  lg:px-8 ... bg-gray-800 rounded-lg">
+  <div class="... py-12 sm:py-16 lg:py-20 faq-pattern">
+    <div
+      class="max-w-screen-xl px-4 pb-16 mx-auto sm:pb-20 sm:px-6  lg:px-12 ... bg-gray-800 bg-opacity-75 rounded-lg shadow-2xl">
       <h2
-        class="pt-8 font-extrabold leading-none tracking-tight text-orange-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
+        class="pt-12 font-extrabold leading-none tracking-tight text-orange-400 text-inter-4xl sm:text-inter-5xl md:text-inter-6xl">
         Frequently asked questions
       </h2>
       <div class="pt-10 mt-6 border-t-2 border-orange-400">
         <dl class="md:grid md:grid-cols-2 md:gap-12">
           <div>
             <div>
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 What's the best thing about Switzerland?
               </dt>
               <dd class="lg:mt-2">
@@ -1300,7 +1069,7 @@
               </dd>
             </div>
             <div class="mt-12">
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 How do you make holy water?
               </dt>
               <dd class="lg:mt-2">
@@ -1311,7 +1080,7 @@
               </dd>
             </div>
             <div class="mt-12">
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 What do you call someone with no body and no nose?
               </dt>
               <dd class="lg:mt-2">
@@ -1324,7 +1093,7 @@
           </div>
           <div class="mt-12 md:mt-0">
             <div>
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 Why do you never see elephants hiding in trees?
               </dt>
               <dd class="lg:mt-2">
@@ -1335,7 +1104,7 @@
               </dd>
             </div>
             <div class="mt-12">
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 Why can't you hear a pterodactyl go to the bathroom?
               </dt>
               <dd class="lg:mt-2">
@@ -1346,7 +1115,7 @@
               </dd>
             </div>
             <div class="mt-12">
-              <dt class="font-semibold leading-6 text-orange-400 text-inter-lg">
+              <dt class="font-semibold leading-6 text-orange-400 text-inter-xl">
                 Why did the invisible man turn down the job offer?
               </dt>
               <dd class="lg:mt-2">
