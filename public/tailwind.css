@@ -19,9 +19,10 @@
 
  .bg-header {
   background: #101323;
-  background-image: url("https://www.ronenbekerman.com/wp-content/uploads/2015/03/Zen_Garden_RGB_1920.jpg"); /* fallback */
-  background-image: url("https://www.ronenbekerman.com/wp-content/uploads/2015/03/Zen_Garden_RGB_1920.jpg"), center center no-repeat linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
-  */
+  background: linear-gradient(to-bottom, black, transparent);
+  background-image: url("https://www.ronenbekerman.com/wp-content/uploads/2015/03/Zen_Garden_RGB_1920.jpg"), center center no-repeat; /* W3C */
+  background-attachment: fixed;
+
 }
 
 
