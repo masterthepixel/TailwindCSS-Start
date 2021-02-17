@@ -110,6 +110,7 @@ module.exports = {
     },
   },
   plugins: [
+    
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/ui'),
     require('tailwindcss-font-inter')({ // it's plugin's default settings
